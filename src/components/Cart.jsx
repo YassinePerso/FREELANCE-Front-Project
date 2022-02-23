@@ -1,0 +1,79 @@
+import React, { useEffect, useState } from 'react';
+// import { Data } from './Data'
+import trash from '../images/delete.png';
+import '../Styles/Cart.css';
+import { connect } from 'react-redux';
+// import {getTotals} from '../components/actions/itemActions'
+
+const Cart = (props) => {
+
+  // const [ cart, setCart ] = useState(Data);
+
+  const { cart } = props.item
+
+  // useEffect(() => {
+  //   props.getTotals();
+  // }, [])
+
+
+    return (
+        <div className='cart'>
+          <div className='inside-container'>
+            {cart.length === 0 ?
+            <>
+            <h3>Votre panier est vide.</h3>
+            </>
+            :
+            <>
+            <h3>Panier</h3>
+            <div className='cart-center'>
+              <div className="cart-info">
+                {cart.map(cart => (
+                  <div className="single-cart" key={cart._id}>
+                    <div className="cart-img">
+                      <img src={cart.img} alt="présentation" />
+                    </div>
+
+                    <div className="cart-title sameItem">
+                      <h4>{cart.title}</h4>
+                    </div>
+
+                    <div className="counting">
+                      <button>-</button>
+                      <button>0</button>
+                      <button>+</button>
+                    </div>
+
+                    <div className="price">
+                      <h4>{cart.price * cart.count}€</h4>
+                    </div>
+
+                    <div className="delete-item">
+                      <img src={trash} className="fa-trash" alt="delete icon" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {/* cart results */}
+              <div className="cart-results">
+                <h3>Détails</h3>
+
+                <h4>Shipping: <span>WIP</span></h4>
+                <h4>Prix: <span>WIP</span></h4>
+                <h4>Prix total: <span>WIP</span></h4>
+              </div>
+            </div>
+            </>
+            }
+          </div>
+        </div>
+    );
+};
+
+const mapStateToProps = (state) => ({
+  
+  item:state.item
+
+})
+
+export default connect(mapStateToProps)(Cart);
