@@ -60,10 +60,10 @@
     padding: 5px 7px;
     font-size: 16px;
     width: 160px;
-    border: 1px solid lightseagreen;
+    background-color: #333;
     outline: none;
     transition: all 0.5s ease-in-out;
-    color: rgb(51, 51, 52);
+    color: white;
 }
 
 .detailsBtn button:hover {

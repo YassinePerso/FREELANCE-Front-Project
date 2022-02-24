@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 // import { Data } from './Data'
 import trash from '../images/delete.png';
 import '../Styles/Cart.css';
 import { connect } from 'react-redux';
-// import {getTotals} from '../components/actions/itemActions'
+import { deleteItem, increaseItem, decreaseItem, getTotals } from '../components/actions/itemActions'
 
 const Cart = (props) => {
 
@@ -11,9 +11,9 @@ const Cart = (props) => {
 
   const { cart } = props.item
 
-  // useEffect(() => {
-  //   props.getTotals();
-  // }, [])
+  useEffect(() => {
+    props.getTotals();
+  }, [])
 
 
     return (
@@ -39,9 +39,15 @@ const Cart = (props) => {
                     </div>
 
                     <div className="counting">
-                      <button>-</button>
-                      <button>0</button>
-                      <button>+</button>
+                      <button onClick={() => {
+                          props.decreaseItem(cart._id);
+                          props.getTotals();
+                      }}>-</button>
+                      <button>{cart.count}</button>
+                      <button onClick={() => {
+                          props.increaseItem(cart._id);
+                          props.getTotals();
+                      }}>+</button>
                     </div>
 
                     <div className="price">
@@ -49,18 +55,22 @@ const Cart = (props) => {
                     </div>
 
                     <div className="delete-item">
-                      <img src={trash} className="fa-trash" alt="delete icon" />
+                      <img src={trash} className="fa-trash" alt="delete icon" onClick={() => {
+                          props.deleteItem(cart._id);
+                          props.getTotals();
+                      }} />
                     </div>
                   </div>
                 ))}
               </div>
               {/* cart results */}
               <div className="cart-results">
-                <h3>Détails</h3>
+                <h3>Total :</h3>
 
-                <h4>Shipping: <span>WIP</span></h4>
-                <h4>Prix: <span>WIP</span></h4>
-                <h4>Prix total: <span>WIP</span></h4>
+                {/* <h4>Frais de livraison: {props.item.total >= 90 ? <span>Gratuit</span> : `+${props.item.shipping}`}</h4> */}
+                <h4>Frais de livraison:<span>Gratuit</span></h4>
+                {/* <h4>Prix: <span>WIP</span></h4> */}
+                <h4>Prix total: <span>{props.item.total}€</span></h4>
               </div>
             </div>
             </>
@@ -76,4 +86,4 @@ const mapStateToProps = (state) => ({
 
 })
 
-export default connect(mapStateToProps)(Cart);
+export default connect(mapStateToProps, {deleteItem, increaseItem, decreaseItem, getTotals})(Cart);

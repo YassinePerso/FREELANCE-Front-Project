@@ -18,9 +18,9 @@ const Product = (props) => {
                 <h4>{data.price}€</h4>
             </div>
 
-            <div className="product-btn">
+            {/* <div className="product-btn">
                 <button onClick={AddToCart}>Ajouter au panier</button>
-            </div>
+            </div> */}
             <div className={isInCart ? "inCart newInCart" : "inCart"}>
                 <span>Déjà dans le Panier</span>
             </div>

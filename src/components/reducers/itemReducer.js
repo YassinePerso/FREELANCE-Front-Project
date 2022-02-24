@@ -1,7 +1,7 @@
 import {
     GET_ITEMS,
     ADD_ITEMS,
-    DELETE_ITEMS,
+    DELETE_ITEM,
     TOGGLE_NAV,
     CLOSE_NAVBAR,
     BANNER_CLOSE,
@@ -153,6 +153,61 @@ const Todos = (state = initialState, action) => {
 
             return {
                 ...state
+            }
+
+        //Effacer le item
+        case DELETE_ITEM:
+
+        const filteredCart = state.cart.filter(item => item._id !== action.payload);
+            return {
+                ...state,
+                cart:filteredCart
+            }
+
+        //Augmenter le nombre d'articles
+        case INCREASE_ITEM:
+            let incResults = state.cart.map(item => {
+                if (item._id === action.payload) {
+                    item = {...item, count:item.count + 1}
+                }
+                return item
+            })
+
+            return {
+                ...state,
+                cart:incResults
+            }
+
+        //Diminuer le nombre d'articles
+        case DECREASE_ITEM:
+            let decResults = state.cart.map(item => {
+                if (item._id === action.payload) {
+                    item = {...item, count:item.count === 1 ? item.count = 1:item.count -1}
+                }
+                return item
+            })
+
+            return {
+                ...state,
+                cart:decResults
+            }
+
+        // Total du panier
+        case TOTAL_ITEMS:
+
+        const totals = state.cart.reduce((prev, item) => {
+            return prev + (item.price * item.count)
+        }, 0)
+            
+          return {
+              ...state,
+              total:totals
+          }
+
+        // Details Page
+        case DETAILS:
+            return {
+                ...state,
             }
 
 
