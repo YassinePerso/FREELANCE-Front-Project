@@ -1,0 +1,16 @@
+.containerLinks {
+    background-color: rgb(146, 153, 51);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    background-color: aqua;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
