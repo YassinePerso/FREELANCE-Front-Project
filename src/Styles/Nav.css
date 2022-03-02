@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background: rgb(122, 122, 122);
     position: sticky;
     top: 0;
@@ -41,10 +41,6 @@ nav .logoBtn a p {
     font-size: 25px;
     font-style: oblique; 
 }
-/* nav .logoBtn a p span {
-    font-size: 30px;
-    color: red;
-} */
 
 nav .logoBtn .hamburger {
     border: 1px solid white;
@@ -97,24 +93,12 @@ nav .logoBtn .hamburger .bar {
     border-radius: 50px;
     text-align: center;
 }
-/*****/
 .shopping-icon span {
     display: none;
 }
 .mobile-shopping {
     display: none;
 }
-/****/
-
-/* .links-navigation {
-    background-color: teal;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    transform: translateX(-100%);
-    width: 100%;
-    transition: all 0.5s ease-in-out;
-} */
 
 .new-links-navigation {
     position: fixed;
@@ -135,10 +119,6 @@ nav .logoBtn .hamburger .bar {
 
 .nav-btn span {
     cursor: pointer;
-    display: none;
-}
-
-/* .shopping-cart {
     display: none;
 } */
 

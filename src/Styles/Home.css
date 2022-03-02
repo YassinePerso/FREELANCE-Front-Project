@@ -8,30 +8,6 @@
     align-items: center;
 }
 
-.banner {
-    color: white;
-    letter-spacing: 0.2rem;
-    font-style: italic;
-    margin-top: -80px;
-    padding: 10px;
-    animation-name: texts;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes texts {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 @media screen and (min-width: 664px) {
     .home {
         min-height: 80vh;

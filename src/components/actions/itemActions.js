@@ -8,7 +8,8 @@ import {
     INCREASE_ITEM,
     DECREASE_ITEM,
     TOTAL_ITEMS,
-    DETAILS
+    DETAILS,
+    // ADD_TO_LOCALSTORAGE
 } from './types';
 
 
@@ -21,7 +22,6 @@ export const getItems = () => {
 
 // apparition - disparition navbar
 export const toggleNav = () => dispatch => {
-    // console.log(`clicked`);
 
     dispatch({
         type:TOGGLE_NAV
@@ -31,7 +31,6 @@ export const toggleNav = () => dispatch => {
 // Closing nav bar
 export const closeNavbar = () => dispatch => {
 
-    // console.log(`closed because it was open`);
     dispatch({
         type:CLOSE_NAVBAR
     })
@@ -45,6 +44,7 @@ export const AddToCart = (id) => dispatch => {
         payload:id
     })
 }
+
 
 //close the banner
 export const bannerClose = () => dispatch => {
