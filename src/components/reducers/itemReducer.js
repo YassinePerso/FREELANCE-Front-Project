@@ -1,4 +1,5 @@
 import {
+    // ADD_TO_LOCALSTORAGE,
     GET_ITEMS,
     ADD_ITEMS,
     DELETE_ITEM,
@@ -16,73 +17,170 @@ const initialState = {
     items:[
         {
             _id: 1,
+            page_category: "Huile",
+            title: "Huile Calmante",
             img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
-            title: "Weed Seed 1",
-            price: "100",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Base MCT et CBD seul",
+            contenance_number: "only",
+            contenance: "15ml",
+            choice: "multiple",
+            taux: ["5%", "10%", "15%"],
+            prix: [38.90, 59.90, 89.90],
+            gout: "neutre",
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
             count: 1,
             isInCart: false
         },
         {
             _id: 2,
-            img: "https://ct112013.files.wordpress.com/2013/07/pasteeel.jpg",
-            title: "Weed Seed 2",
-            price: "40",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
+            page_category: "Huile",
+            title: "Huile Relaxante",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Base MCT et CBD + CBG",
+            contenance_number: "only",
+            contenance: "10ml",
+            choice: "multiple",
+            taux: ["5%", "10%", "15%"],
+            prix: [39.90, 49.90, 69.90],
+            gout: "neutre",
+            Provenance: "Europe",
+            utilisation: "loreum loreum loreum loreum loreum",
             count: 1,
             isInCart: false
         },
         {
             _id: 3,
-            img: "https://i.pinimg.com/736x/1a/e9/ff/1ae9ff68eddb75113cc797f1324515b9--color-coordination-reiss.jpg",
-            title: "Weed Seed 3",
-            price: "47",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
+            page_category: "Huile",
+            title: "Huile Anti-Stress",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Base MCT et CBD seul",
+            contenance_number: "only",
+            contenance: "10ml",
+            choice: "only",
+            taux: "10%",
+            prix: 49.90,
+            gout: "neutre",
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
             count: 1,
             isInCart: false
         },
         {
             _id: 4,
-            img: "http://www.todaysparent.com/wp-content/uploads/2014/02/Mint1.jpg",
-            title: "Weed Seed 4",
-            price: "98",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
+            page_category: "Huile",
+            title: "Huile Anti-douleur",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Base MCT et CBD + CBG",
+            contenance_number: "multiple",
+            contenance: ["10ml", "20ml"],
+            choice: "multiple",
+            taux: ["10%", "10%", "10%"],
+            prix: [59.90, 59.90, 59.90],
+            gout: ["Citron vert", "Fraise", "Neutre"],
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
             count: 1,
             isInCart: false
         },
         {
             _id: 5,
-            img: "https://i.pinimg.com/originals/de/3a/64/de3a6465fd0b23253218d265b01da16e.jpg",
-            title: "Weed Seed 5",
-            price: "14",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
+            page_category: "Thé",
+            title: "Infusion CBD Vitalité",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Neutre",
+            choice: "only",
+            taux: "10% de fleurs",
+            prix: 14.90,
+            gout: "Neutre",
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
             count: 1,
             isInCart: false
         },
         {
             _id: 6,
-            img: "https://www.clashmusic.com/sites/default/files/field/image/CLASH104_%20InternalImage62.jpg",
-            title: "Weed Seed 6",
-            price: "438",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
+            page_category: "Thé",
+            title: "Infusion CBD Digestion",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Mélisse, Verveine",
+            taux: "10% de fleurs",
+            prix: 14.90,
+            gout: "Mélisse, Verveine",
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
             count: 1,
             isInCart: false
         },
         {
             _id: 7,
-            img: "http://www.umusic.ca/wp-content/uploads/2017/07/Kendrick-Lamar-Interview-Magazine-Photo-7.jpg",
-            title: "Weed Seed 7",
-            price: "865",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
+            page_category: "Thé",
+            title: "Thé Anti-Stress",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Thé vert, Menthe, Citron",
+            taux: "5% de fleurs",
+            prix: 13.90,
+            gout: "Menthe, Citron",
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
             count: 1,
             isInCart: false
         },
         {
             _id: 8,
-            img: "http://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/g/gca1qade12xtvxq.jpg",
-            title: "Weed Seed 8",
-            price: "865",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
+            page_category: "Autre",
+            title: "Gummies CBD",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Vegan, Mixed fruits",
+            contenance: "60 Gummies",
+            choice: "only",
+            taux: "<2%",
+            prix: 34.90,
+            gout: "Mixed fruits",
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
+            count: 1,
+            isInCart: false
+        },
+        {
+            _id: 9,
+            page_category: "Autre",
+            title: "Gummies CBD",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Vegan, Strawberry",
+            contenance: "60 Gummies",
+            choice: "only",
+            taux: "<2%",
+            prix: 34.90,
+            gout: "Strawberry",
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
+            count: 1,
+            isInCart: false
+        },
+        {
+            _id: 10,
+            page_category: "Autre",
+            title: "Gummies CBD",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+            description: "loreum loreum loreum loreum loreum",
+            composition: "Vegan",
+            contenance: "60 Gummies",
+            choice: "only",
+            taux: "2.50%",
+            prix: 29.90,
+            gout: "Neutre",
+            Provenance: "France",
+            utilisation: "loreum loreum loreum loreum loreum",
             count: 1,
             isInCart: false
         }
@@ -93,9 +191,12 @@ const initialState = {
     shipping: 10
 };
 
+
+
 const Todos = (state = initialState, action) => {
 
     switch(action.type) {
+
 
         // Récupérer le state initial
         case GET_ITEMS:
@@ -119,6 +220,12 @@ const Todos = (state = initialState, action) => {
             //Add To Cart functionnality
         // eslint-disable-next-line no-fallthrough
         case ADD_ITEMS:
+
+        if (localStorage.getItem("cart")) {
+          initialState.cart = JSON.parse(localStorage.getItem("cart"));
+        } else {
+          initialState.cart = [];
+        }
             
         let check = state.cart.find(item => item._id === action.payload);
 
@@ -196,7 +303,7 @@ const Todos = (state = initialState, action) => {
         case TOTAL_ITEMS:
 
         const totals = state.cart.reduce((prev, item) => {
-            return prev + (item.price * item.count)
+            return prev + (item.prix * item.count)
         }, 0)
             
           return {
@@ -218,5 +325,4 @@ const Todos = (state = initialState, action) => {
 
 
 }
-
 export default Todos;

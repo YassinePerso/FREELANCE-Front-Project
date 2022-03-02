@@ -1,4 +1,4 @@
-.product {
+/* .product {
     border: 1px solid rgb(226,224,224);
     width: 80%;
     margin: 20px auto;
@@ -12,7 +12,8 @@
     text-align: center;
     margin-top: 30px;
     letter-spacing: 0.1rem;
-    /* font-style: italic; */
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .box-img {
@@ -37,7 +38,7 @@
     text-align: center;
     margin: 5px;
     /* color: crimson; */
-}
+/* }
 .product-btn button {
     outline: none;
     width: 90%;
@@ -91,7 +92,7 @@
 }
 
 @media screen and (min-width: 660px) {
-    .products-center {
+    .productsCenter {
         display: flex;
         flex-wrap: wrap;
         margin: 0;
@@ -134,14 +135,5 @@
     .product img {
         height: 280px;
     }
-}
-
-
-
-
-
-
-
-
-
+} */
 

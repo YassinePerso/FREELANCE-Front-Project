@@ -1,16 +1,17 @@
-import React, { useEffect } from 'react';
-import Product from '../components/Product';
+import React from 'react';
+import Product from './Product';
 // import { Data } from '../components/Data'
 import '../Styles/Products.css';
 import { connect } from 'react-redux';
 import { getItems, AddToCart, bannerClose} from './actions/itemActions';
+import Marquee from '../components/Marquee';
 
 const Products = (props) => {
 
 
-    useEffect(() => {
-        props.getItems();
-    }, [])
+    // useEffect(() => {
+    //     props.getItems();
+    // }, [])
 
     //AddToCart
     const AddToCart = (id) => {
@@ -26,11 +27,14 @@ const Products = (props) => {
     
     return (
         <div className="products">
+            <Marquee  name="Huile"/>
+
+            {/* <h2>HUILE PRODUCTS</h2> */}
 
             <div className="inside-container">
                 {/* <h3>Products</h3> */}
                 <div className="products-center">
-                    {items.map((product) => <Product key={product._id} data={product} AddToCart={() => AddToCart(product._id)} isInCart={product.isInCart}/>)}
+                    {items.filter((elt) => elt.page_category === "Huile").map((product) => <Product key={product._id} data={product} AddToCart={() => AddToCart(product._id)} isInCart={product.isInCart}/>)}
                 </div>
             </div>
         </div>

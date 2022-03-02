@@ -1,3 +1,51 @@
+/* .details {
+    background-color: rgb(146, 146, 146);
+} */
+
+/* .insideContainerDetails {
+    background-color: yellow;
+} */
+
+/* Grid Button */
+.detailsBtn {
+    margin-top: 20px;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: rgb(255, 80, 255); */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.buttonGridDetails {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid #333;
+}
+.buttonGridDetails button {
+    cursor: pointer;
+    /* margin-right: 10px; */
+    /* padding: 10px 20px; */
+    font-size: clamp(15px, 6vw, 30px);
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* background-color: #333; */
+    outline: none;
+    /* transition: all 0.5s ease-in-out; */
+    color: black;
+}
+.buttonGridDetails p {
+    margin: auto;
+    font-size: clamp(15px, 6vw, 30px);
+}
+/* End Grid Button */
+
+
 .details h3 {
     margin-top: 30px;
     text-align: center;
@@ -5,73 +53,123 @@
     font-style: italic;
 }
 
+/* GRID PRODUCT */
 .detailsCenter {
+    /* background-color: rgb(133, 132, 132); */
     border: 1px solid lightgrey;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "1" "2";
 }
 
 .detailsImg {
-    height: 300px;
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(235, 233, 233);
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: blue; */
+    height: 45vh;
+    width: 80%;
+    /* margin: 0 auto; */
+    /* text-align: center; */
 }
 
 .detailsImg img {
-    width: 300px;
+    /* background-color: rgb(209, 26, 26); */
+    /* width:%; */
+    border: 5px solid #333;
     height: 100%;
     margin: 0 auto;
     text-align: center;
     display: block;
 }
 
-.detailsInfo {
-    margin-top: 20px;
+.detailsInfoGrid {
+    background-color: #f4d0d0;
+    /* margin-top: 20px; */
     width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
+/* .wrapperGridDetailsInfo {
+    background-color: rgb(70, 219, 65);
+    width: 100%;
+    height: 50%;
+} */
 
-.detailsInfo h4 {
-    text-align: center;
-    text-decoration: underline;
+.detailsInfoGrid h4 {
+    width: 100%;
+    /* background-color: grey; */
+    text-align: start;
     letter-spacing: 0.1rem;
-    font-style: italic;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.detailsPrice {
+.detailsInfoGrid p {
+    /* background-color: rgb(30, 176, 243); */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/***************   DROPDOWN   **********************************************/
+
+/***************   DROPDOWN   **********************************************/
+
+
+/* BTN Retour */
+.containerLinkRetour {
+    padding: 3rem 3rem 3rem 6rem;
+}
+.containerLinkRetour button {
+    border-radius: 20px;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #f4d0d0;
+}
+.linkRetour {
+    color: black;
+    font-size: clamp(10px, 6vw, 20px);
+}
+
+@media screen and (max-width: 900px) {
+    .detailsCenter {
+        border: 1px solid lightgrey;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+    .detailsImg img {
+        /* background-color: rgb(209, 26, 26); */
+        width:100%;
+        border: 5px solid #333;
+        height: 100%;
+        /* margin: 0 auto; */
+        /* text-align: center; */
+        /* display: block; */
+    }
+}
+
+/* .detailsPrice {
     margin: 10px 0;
     font-weight: bold;
-}
-
+    background-color: pink;
+} 
 /* .detailsPrice span {
     color: crimson;
 } */
 
-.detailsBtn {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
 
-.detailsBtn button {
-    margin-right: 10px;
-    padding: 5px 7px;
-    font-size: 16px;
-    width: 160px;
-    background-color: #333;
-    outline: none;
-    transition: all 0.5s ease-in-out;
-    color: white;
-}
 
-.detailsBtn button:hover {
+/* .detailsBtn button:hover {
     cursor: pointer;
     border: 1px solid green;
-}
+} */
 
-@media screen and (min-width: 664px) {
+/* @media screen and (min-width: 664px) {
     .detailsBtnCenter {
         display: flex;
         flex-wrap: wrap;
@@ -106,5 +204,5 @@
     .detailsBtn button {
         margin-top: 20px;
     }
-}
+} */
 

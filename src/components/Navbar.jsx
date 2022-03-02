@@ -46,23 +46,16 @@ const Navbar = (props) => {
 
             <ul className="links-nav" onClick={props.closeNavbar}>
               <li>
-                {/* <Link to="/">Home</Link> */}
-                <Link to="/">Huile</Link>
-              </li>
-              <li>
-                {/* <Link to="/about">About</Link> */}
                 <Link to="/about">Thé</Link>
               </li>
               <li>
-                {/* <Link to="/products">Products</Link> */}
-                <Link to="/products">Beauté</Link>
+                <Link to="/products">Huile</Link>
               </li>
               <li>
-                {/* <Link to="/contact">Contact</Link> */}
                 <Link to="/contact">Autre</Link>
               </li>
               <li>
-                <Link to="/contact">Livraison</Link>
+                <Link to="/livraison">Livraison</Link>
               </li>
             </ul>
           </div>

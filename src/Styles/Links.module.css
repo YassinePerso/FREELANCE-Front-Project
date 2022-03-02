@@ -1,5 +1,5 @@
 .containerLinks {
-    background-color: rgb(146, 153, 51);
+    /* background-color: rgb(146, 153, 51); */
     height: 10vh;
     width: 100%;
     display: flex;
@@ -8,7 +8,8 @@
 }
 
 .links {
-    background-color: aqua;
+    /* background-color: aqua; */
+    border: 2px solid #333;
     width: 40%;
     display: flex;
     justify-content: space-around;

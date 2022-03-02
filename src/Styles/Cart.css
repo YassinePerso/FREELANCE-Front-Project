@@ -30,7 +30,6 @@
     color: rgb(61,61,61);
     letter-spacing: 0.1rem;
     font-style: italic;
-    text-decoration: underline;
 }
 
 .counting button {
@@ -68,7 +67,6 @@
 
 .cart-results h3 {
     text-align: center;
-    text-decoration: underline;
     margin-bottom: 20px;
     color: rgb(48, 47, 47);
     font-size: 22px;

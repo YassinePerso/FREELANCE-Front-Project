@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 // import { Data } from './Data'
 import trash from '../images/delete.png';
 import '../Styles/Cart.css';
@@ -7,12 +7,13 @@ import { deleteItem, increaseItem, decreaseItem, getTotals } from '../components
 
 const Cart = (props) => {
 
+  // const [ cart, setCart ] = useState(Data);
 
   const { cart } = props.item
 
-  useEffect(() => {
-    props.getTotals();
-  }, [])
+  // useEffect(() => {
+  //   props.getTotals();
+  // }, [])
 
 
     return (
