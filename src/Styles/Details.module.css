@@ -1,0 +1,110 @@
+.details h3 {
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+}
+
+.detailsCenter {
+    border: 1px solid lightgrey;
+    padding: 10px 10px;
+}
+
+.detailsImg {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(235, 233, 233);
+}
+
+.detailsImg img {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.detailsInfo {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.detailsInfo h4 {
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.detailsPrice {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* .detailsPrice span {
+    color: crimson;
+} */
+
+.detailsBtn {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detailsBtn button {
+    margin-right: 10px;
+    padding: 5px 7px;
+    font-size: 16px;
+    width: 160px;
+    background-color: #333;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+
+.detailsBtn button:hover {
+    cursor: pointer;
+    border: 1px solid green;
+}
+
+@media screen and (min-width: 664px) {
+    .detailsBtnCenter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .detailsImg {
+        flex: 35%;
+    }
+    .detailsImg img {
+        width: 100%;
+    }
+    .detailsInfo {
+        flex: 50%;
+        padding-left:20px ;
+    }
+}
+@media screen and (min-width: 964px) {
+    .detailsBtnCenter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .detailsImg {
+        flex: 0 0 calc(40% - 0);
+        height: 350px;
+    }
+    .detailsImg img {
+        width: 100%;
+    }
+    .detailsInfo {
+        flex: 0 0 calc(60% - 0);
+        padding-left: 20px;
+    }
+    .detailsBtn button {
+        margin-top: 20px;
+    }
+}
+
