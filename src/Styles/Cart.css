@@ -34,6 +34,7 @@
 
 .counting button {
     width: 25px;
+    border: none;
 }
 .counting span {
     font-size: 18px;

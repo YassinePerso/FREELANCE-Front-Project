@@ -39,20 +39,20 @@ const Navbar = (props) => {
 
           <div className="links">
             <div className={props.item.cart.isOpen ? "new-links-navigation" : "links-navigation"}>
-              <div className="nav-btn">
+              {/* <div className="nav-btn">
                 <span onClick={props.toggleNav}>X</span>
-              </div>
+              </div> */}
             </div>
 
             <ul className="links-nav" onClick={props.closeNavbar}>
               <li>
-                <Link to="/about">Thé</Link>
+                <Link to="/Thé">Thé</Link>
               </li>
               <li>
-                <Link to="/products">Huile</Link>
+                <Link to="/Huile">Huile</Link>
               </li>
               <li>
-                <Link to="/contact">Autre</Link>
+                <Link to="/Autre">Autre</Link>
               </li>
               <li>
                 <Link to="/livraison">Livraison</Link>

@@ -61,32 +61,19 @@ import { getItems, AddToCart } from "../components/actions/itemActions";
 import "../Styles/Details.module.css";
 import styles from "../Styles/Details.module.css";
 import Links from "../components/Links";
-import { getByTitle } from "@testing-library/react";
 
 const Details = (props) => {
+  
+  // console.log(useParams().id);
+  
   const { id } = useParams();
-  const { pageCategory } = useParams();
-  const { title } = useParams();
+  let detailsProduct = props.item.items.find((item) => item._id === parseInt(id));
 
-  console.log(useParams().id);
+  // const [theForm, setTheForm] = useState(false);
 
-  const {contenance} = props.item.items.contenance;
-
-  let detailsProduct = props.item.items.find((item) => item._id === Number(id));
-
-  let detailsPageCategory = props.item.items.find(
-    (item) => item.page_category === Number(pageCategory, title)
-  );
-
-  let detailsTitle = props.item.items.find(
-    (item) => item.title === Number(title)
-  );
-
-  const [theForm, setTheForm] = useState(false);
-
-  function handleClickForm() {
-    setTheForm(!theForm);
-  }
+  // function handleClickForm() {
+  //   setTheForm(!theForm);
+  // }
 
   return (
     <>
@@ -119,61 +106,40 @@ const Details = (props) => {
               <img src={`/${detailsProduct.img}`} alt="product" />
             </div>
             {/* CAROUSEL */}
-            {/* <div class="slideshow-container">
-                <div class="first-carousel">
-                  <div class="slide">
-                    <img src={`/${detailsProduct.img[0]}`} alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src={`/${detailsProduct.img[1]}`} alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src={`/${detailsProduct.img[2]}`} alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src={`/${detailsProduct.img[3]}`} alt="" />
-                  </div>
-                </div>
-              </div> */}
-            {/* CAROUSEL */}
-
             {/* GRID -- 2 */}
             <section className={styles.detailsInfoGrid}>
               {/* <div className={styles.wrapperGridDetailsInfo}> */}
 
-              {/* DROPDOWN */}
-
-              {/* DROPDOWN */}
-
               <h4 className={styles.detailsTitle}>{detailsProduct.title}</h4>
-              <h4 className={styles.detailsTitle}>
+              <p className={styles.detailsTextInfo}>
                 {detailsProduct.description}
-              </h4>
+              </p>
 
+              <p className={styles.detailsTextInfo}>
+                {detailsProduct.composition}
+              </p>
               <p className={styles.detailsTextInfo}>
                 {detailsProduct.contenance}
               </p>
-                  {/* {contenance.map(() => {
-                    return (
-                  
-                      )
-                      for (let i = 0; i < contenance.length; i++ ) {
-                        if()
-                      }
-                   }
-                  }
-                 */}
-                <option value={detailsProduct.contenance}>{detailsProduct.contenance}</option>
+              <p className={styles.detailsTextInfo}>
+                {detailsProduct.taux}
+              </p>
+              <p className={styles.detailsTextInfo}>
+                {detailsProduct.gout}
+              </p>
 
               <p className={styles.detailsTextInfo}>
                 {detailsProduct.utilisation}
+              </p>
+              <p className={styles.detailsTextInfo}>
+                {detailsProduct.Provenance}
               </p>
               {/* </div> */}
             </section>
           </section>
           <section className={styles.containerLinkRetour}>
             <button>
-              <Link to="/products" className={styles.linkRetour}>
+              <Link to={`${detailsProduct.page_category}`} className={styles.linkRetour}>
                 Retour
               </Link>
             </button>

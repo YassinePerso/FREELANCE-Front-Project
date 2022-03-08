@@ -5,6 +5,7 @@ const Product = (props) => {
 
     const {data, AddToCart, isInCart} = props;
 
+
     return (
         <div className="product">
             <div className="product-details">
@@ -15,14 +16,23 @@ const Product = (props) => {
                     <img src={data.img} alt="produit" />
                 </Link>
             </div>
-
-
-            {/* <div className="product-btn">
-                <button onClick={AddToCart}>Ajouter au panier</button>
+            <h3>{data.taux}</h3>
+            <h3>{data.contenance}</h3>
+            <h3>{data.gout}</h3>
+            <h3>{data.prix}€</h3>
+            {/* <div className="box-img">
+                <Link to={`/subCategory/${data.url}}`}>
+                    <img src={data.img} alt="produit" />
+                </Link>
             </div> */}
-            <div className={isInCart ? "inCart newInCart" : "inCart"}>
-                <span>Déjà dans le Panier</span>
+
+
+            <div className="product-btn">
+                <button onClick={AddToCart}>Ajouter au panier</button>
             </div>
+            {/* <div className={isInCart ? "inCart newInCart" : "inCart"}>
+                <span>Déjà dans le Panier</span>
+            </div> */}
         </div>
     );
 };

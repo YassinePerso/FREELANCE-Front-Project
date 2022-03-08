@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 // import { Data } from './Data'
 import trash from '../images/delete.png';
 import '../Styles/Cart.css';
@@ -10,9 +10,9 @@ const Cart = (props) => {
 
   const { cart } = props.item
 
-  useEffect(() => {
-    props.getTotals();
-  }, [])
+  // useEffect(() => {
+  //   props.getTotals();
+  // }, [])
 
 
     return (
@@ -37,6 +37,11 @@ const Cart = (props) => {
                       <h4>{cart.title}</h4>
                     </div>
 
+                    {/* TAUX  */}
+                    <p>{cart.taux}</p>
+                    <p>{cart.contenance}</p>
+                    <p>{cart.gout}</p>
+
                     <div className="counting">
                       <button onClick={() => {
                           props.decreaseItem(cart._id);
@@ -50,7 +55,7 @@ const Cart = (props) => {
                     </div>
 
                     <div className="price">
-                      <h4>{cart.price * cart.count}€</h4>
+                      <h4>{cart.prix * cart.count}€</h4>
                     </div>
 
                     <div className="delete-item">
