@@ -3,10 +3,10 @@ import '../Styles/Products.css';
 import { connect } from 'react-redux';
 import { getItems, AddToCart, bannerClose} from './actions/itemActions';
 import Product from './Product';
-import Marquee from '../components/Marquee';
+import Marquee from './Marquee';
 
 
-const Contact = (props) => {
+const Autre = (props) => {
  
     // useEffect(() => {
     //     props.getItems();
@@ -16,9 +16,9 @@ const Contact = (props) => {
     const AddToCart = (id) => {
         props.AddToCart(id);
 
-        setTimeout(() => {
-            props.bannerClose();
-        }, 2000)
+        // setTimeout(() => {
+        //     props.bannerClose();
+        // }, 2000)
     }
 
     const {items} = props.item;
@@ -28,10 +28,8 @@ const Contact = (props) => {
         <div className="products">
             <Marquee  name="Autre"/>
 
-            {/* <h2>AUTRE PRODUCT</h2> */}
 
             <div className="inside-container">
-                {/* <h3>Products</h3> */}
                 <div className="products-center">
                     {items.filter((elt) => elt.page_category === "Autre").map((product) => <Product key={product._id} data={product} AddToCart={() => AddToCart(product._id)} isInCart={product.isInCart}/>)}
                 </div>
@@ -41,8 +39,6 @@ const Contact = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-
     item:state.item
-
 })
-export default connect(mapStateToProps, {getItems, AddToCart, bannerClose}) (Contact);
+export default connect(mapStateToProps, {getItems, AddToCart, bannerClose}) (Autre);

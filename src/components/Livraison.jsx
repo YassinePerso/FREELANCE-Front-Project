@@ -5,7 +5,7 @@ const Livraison = () => {
     return (
         <>
         <Marquee name="livraison" />
-            <p>Page Livraison</p>
+            <p style={{marginTop:"10rem",marginLeft:"20%",fontSize:"40px"}}>Page Livraison - Aucun produit pour l'instant</p>
         </>
     );
 };
