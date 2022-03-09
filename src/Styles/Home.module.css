@@ -1,0 +1,9 @@
+.containerHome {
+    background-color: yellow;
+    height: 100vh;
+}
+
+.containerHomeImg {
+    height: 20%;
+    width: 100%;
+}
