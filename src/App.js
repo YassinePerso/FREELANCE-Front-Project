@@ -3,12 +3,13 @@ import './App.css';
 
 import Navbar from '../src/components/Navbar';
 import Home from '../src/components/Home';
-import Huile from './components/Huile';
-import Cart from '../src/components/Cart';
 import Thé from './components/Thé';
-import Details from '../src/components/Details';
+import Huile from './components/Huile';
+import Beauté from './components/Page/Beauté';
 import Autre from '../src/components/Autre';
 import Livraison from '../src/components/Livraison';
+import Cart from '../src/components/Cart';
+import Details from '../src/components/Details';
 import { Provider } from 'react-redux';
 import store from './components/store'
 import Footer from './components/Footer';
@@ -21,19 +22,25 @@ import HuileCalmante from './components/Page/HuileCalmante';
 import HuileRelaxante from './components/Page/HuileRelaxante';
 import HuileAntiDouleur from './components/Page/HuileAntiDouleur';
 
+
+
 function App() {
+
+
+
   return (
     <Provider store={store}>
     <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/Huile" element={<Huile />} />
-        <Route path="/cart" element={<Cart />}/>
         <Route path="/Thé" element={<Thé />}/>
-        <Route path="/details/:id" element={<Details />}/>
+        <Route path="/Huile" element={<Huile />} />
+        <Route path="/Beauté" element={<Beauté />} />
         <Route path="/Autre" element={<Autre />}/>
         <Route path="/livraison" element={<Livraison />}/>
+        <Route path="/cart" element={<Cart />}/>
+        <Route path="/details/:id" element={<Details />}/>
         <Route path="/CGV" element={<CGV />}/>
         <Route path="/FAQ" element={<FAQ />}/>
         <Route path="/Nous-contacter" element={<NousContacter />}/>

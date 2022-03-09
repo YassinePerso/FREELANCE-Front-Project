@@ -61,6 +61,7 @@ import { getItems, AddToCart } from "../components/actions/itemActions";
 import "../Styles/Details.module.css";
 import styles from "../Styles/Details.module.css";
 import Links from "../components/Links";
+import Accordion from "./Accordion";
 
 const Details = (props) => {
   
@@ -111,35 +112,42 @@ const Details = (props) => {
               {/* <div className={styles.wrapperGridDetailsInfo}> */}
 
               <h4 className={styles.detailsTitle}>{detailsProduct.title}</h4>
-              <p className={styles.detailsTextInfo}>
+
+
+              {/* <p className={styles.detailsTextInfo}>
                 {detailsProduct.description}
-              </p>
+              </p> */}<Accordion name="Description" description={detailsProduct.description}/>
 
-              <p className={styles.detailsTextInfo}>
+              {/* <p className={styles.detailsTextInfo}>
                 {detailsProduct.composition}
-              </p>
-              <p className={styles.detailsTextInfo}>
-                {detailsProduct.contenance}
-              </p>
-              <p className={styles.detailsTextInfo}>
-                {detailsProduct.taux}
-              </p>
-              <p className={styles.detailsTextInfo}>
-                {detailsProduct.gout}
-              </p>
+              </p> */}<Accordion name="Composition" description={detailsProduct.composition}/>
 
-              <p className={styles.detailsTextInfo}>
+              {/* <p className={styles.detailsTextInfo}>
+                {detailsProduct.contenance}
+              </p> */}<Accordion name="contenance" description={detailsProduct.contenance}/>
+
+              {/* <p className={styles.detailsTextInfo}>
+                {detailsProduct.taux}
+              </p> */}<Accordion name="Taux" description={detailsProduct.taux}/>
+
+              {/* <p className={styles.detailsTextInfo}>
+                {detailsProduct.gout}
+              </p> */}<Accordion name="Goût" description={detailsProduct.gout}/>
+
+              {/* <p className={styles.detailsTextInfo}>
                 {detailsProduct.utilisation}
-              </p>
-              <p className={styles.detailsTextInfo}>
+              </p> */}<Accordion name="Utilisation" description={detailsProduct.utilisation}/>
+
+              {/* <p className={styles.detailsTextInfo}>
                 {detailsProduct.Provenance}
-              </p>
+              </p> */}<Accordion name="Provenance" description={detailsProduct.Provenance}/>
+              
               {/* </div> */}
             </section>
           </section>
           <section className={styles.containerLinkRetour}>
             <button>
-              <Link to={`${detailsProduct.page_category}`} className={styles.linkRetour}>
+              <Link to={`/${detailsProduct.page_category}`} className={styles.linkRetour}>
                 Retour
               </Link>
             </button>

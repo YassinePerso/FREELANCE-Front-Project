@@ -13,7 +13,7 @@ import {
 } from '../actions/types';
 
 
-const initialState = {
+export const initialState = {
     items:[
   // HUILE CALMANTE //
   {
@@ -336,12 +336,6 @@ const Todos = (state = initialState, action) => {
         // eslint-disable-next-line no-fallthrough
         case ADD_ITEMS:
 
-        // if (localStorage.getItem("cart")) {
-        //   initialState.cart = JSON.parse(localStorage.getItem("cart"));
-        // } else {
-        //   initialState.cart = [];
-        // }
-            
         let check = state.cart.find(item => item._id === action.payload);
 
         if (!check) {
