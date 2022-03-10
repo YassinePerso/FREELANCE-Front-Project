@@ -1,9 +1,101 @@
-.containerHome {
-    background-color: yellow;
-    height: 100vh;
+
+
+    .containerHome {
+        width: 100%;
+        height: 150vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7fr 4fr;
+    }
+    .containerHomeImg {
+        overflow: hidden;
+    }
+    .containerHomeText {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+        justify-items: center;
+    }
+    .divPHome {
+        background-color: #f4d0d0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 100px 10px 100px;
+    }
+    /** DISPLAY : GRID **/
+.containerHomeButton {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    position: absolute;
+    margin-top: 20%;
+}
+.secondButtonGridHome button {
+    background-color: #f4d0d0;
+    padding: 10px;
+    border-radius: 30px;
 }
 
-.containerHomeImg {
-    height: 20%;
+@media screen and (max-width: 1030px) {
+    .containerHomeButton {
+        margin-top: 25%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .containerHomeButton {
+        margin-top: 28%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .containerHomeButton {
+        margin-top: 31%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+.containerHome {
     width: 100%;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 4fr;
+}
+.containerHomeImg {
+    overflow: hidden;
+}
+.containerHomeText {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+}
+.divPHome {
+    background-color: #f4d0d0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/** DISPLAY : GRID **/
+.containerHomeButton {
+    /* background-color: greenyellow; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    position: absolute;
+    margin-top: 71%;
+}
+.secondButtonGridHome button {
+    background-color: #f4d0d0;
+    padding: 10px;
+    border-radius: 30px;
+}
+
 }

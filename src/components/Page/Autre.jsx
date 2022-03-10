@@ -1,9 +1,9 @@
 import React from 'react';
-import '../Styles/Products.css';
+import '../../Styles/Products.css';
 import { connect } from 'react-redux';
-import { getItems, AddToCart, bannerClose} from './actions/itemActions';
-import Product from './Product';
-import Marquee from './Marquee';
+import { getItems, AddToCart, bannerClose} from '../actions/itemActions';
+import Product from '../Product';
+import Marquee from '../Marquee';
 
 
 const Autre = (props) => {

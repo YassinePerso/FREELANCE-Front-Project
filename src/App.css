@@ -1,6 +1,6 @@
 * {
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,17 +14,27 @@ a {
 .container {
   max-width: 1300px;
   margin: 0 auto;
+  background-color: yellow;
 }
 .products {
-  /* background-color: rebeccapurple; */
+  background-color: rgb(153, 153, 153);
   width: 100%;
-  height: 120vh;
+  height: 100vh;
+  /* background-color: brown; */
 }
 
-.inside-container {
+.inside-container { 
   /* max-width: 1280px; */
-  height: 56vh;
-  max-width: 1400px;
+  height: 100vh;
+  /* max-width: 1400px; */
   margin: 0 auto;
   padding: 0 10px;
+  background-color: aqua;
+}
+
+@media screen and (max-width:700px) {
+  .products {
+    width: 100%;
+    height: 300vh;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
-import styles from '../Styles/NousContacter.module.css';
+import styles from '../../Styles/NousContacter.module.css';
 
 const NousContacter = () => {
 

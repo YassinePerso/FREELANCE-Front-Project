@@ -147,7 +147,7 @@ const Navbar = (props) => {
 
 			<ul className={open ? 'nav-links active' : 'nav-links'}>
 				<li className="nav-item">
-					<Link to="/Thé" className="nav-link" onClick={closeMenu}>
+					<Link to="/The" className="nav-link" onClick={closeMenu}>
 						Thé
 					</Link>
 				</li>
@@ -157,7 +157,7 @@ const Navbar = (props) => {
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link to="/Beauté" className="nav-link" onClick={closeMenu}>
+					<Link to="/Beaute" className="nav-link" onClick={closeMenu}>
 						Beauté
 					</Link>
 				</li>
