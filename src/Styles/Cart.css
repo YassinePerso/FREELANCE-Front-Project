@@ -6,6 +6,12 @@
     font-style: italic;
 }
 
+.cart {
+    /* background-color: rebeccapurple; */
+    height: 100vh;
+    width: 100%;
+}
+
 .cart-center {
     display: block;
 }

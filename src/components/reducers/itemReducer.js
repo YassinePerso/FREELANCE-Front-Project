@@ -3,8 +3,8 @@ import {
     GET_ITEMS,
     ADD_ITEMS,
     DELETE_ITEM,
-    TOGGLE_NAV,
-    CLOSE_NAVBAR,
+    // TOGGLE_NAV,
+    // CLOSE_NAVBAR,
     BANNER_CLOSE,
     INCREASE_ITEM,
     DECREASE_ITEM,
@@ -319,19 +319,19 @@ const Todos = (state = initialState, action) => {
                  ...state
              }
              // TOGGLE navigation APPARITION
-        case TOGGLE_NAV:
-             return {
-                 ...state,
-                 isOpen:!state.isOpen
-             }
+        // case TOGGLE_NAV:
+        //      return {
+        //          ...state,
+        //          isOpen:!state.isOpen
+        //      }
              //close navbar
-        case CLOSE_NAVBAR:
-            if (state.isOpen === true) {
-                return {
-                    ...state,
-                    isOpen:false
-                }
-            }
+        // case CLOSE_NAVBAR:
+        //     if (state.isOpen === true) {
+        //         return {
+        //             ...state,
+        //             isOpen:false
+        //         }
+        //     }
             //Add To Cart functionnality
         // eslint-disable-next-line no-fallthrough
         case ADD_ITEMS:

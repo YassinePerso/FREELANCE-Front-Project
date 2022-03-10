@@ -1,9 +1,9 @@
 import React from 'react';
 // import { Data } from './Data'
-import trash from '../images/delete.png';
-import '../Styles/Cart.css';
+import trash from '../../images/delete.png';
+import '../../Styles/Cart.css';
 import { connect } from 'react-redux';
-import { deleteItem, increaseItem, decreaseItem, getTotals } from '../components/actions/itemActions'
+import { deleteItem, increaseItem, decreaseItem, getTotals } from '../../components/actions/itemActions'
 
 const Cart = (props) => {
 
@@ -18,7 +18,7 @@ const Cart = (props) => {
     return (
         <div className='cart'>
           <div className='inside-container'>
-            {cart.length === 0 ?
+          {cart.length === 0 ?
             <>
             <h3>Votre panier est vide.</h3>
             </>

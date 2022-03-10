@@ -56,12 +56,11 @@ import { Link, useParams } from "react-router-dom";
 import React, { useState } from "react";
 // import { Data } from './Data';
 import { connect } from "react-redux";
-import { getItems, AddToCart } from "../components/actions/itemActions";
+import { getItems, AddToCart } from "../../components/actions/itemActions";
 
-import "../Styles/Details.module.css";
-import styles from "../Styles/Details.module.css";
-import Links from "../components/Links";
-import Accordion from "./Accordion";
+import styles from "../../Styles/Details.module.css";
+import Links from "../../components/Links";
+import Accordion from "../Accordion";
 
 const Details = (props) => {
   
