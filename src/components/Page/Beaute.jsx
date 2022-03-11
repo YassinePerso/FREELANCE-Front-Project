@@ -1,13 +1,17 @@
 import React from 'react';
 import Marquee from '../Marquee';
 
-const Livraison = () => {
+import styles from '../../Styles/Beauté.module.css'
+
+const Beaute = () => {
     return (
         <>
         <Marquee name="Beauté" />
-            <p style={{marginTop:"11rem",marginLeft:"20%",fontSize:"40px"}}>Page Beauté - Aucun produit pour l'instant</p>
+        <section className={styles.containerBeauté}>
+            <p>Page Beauté - Aucun produit pour l'instant</p>
+        </section>
         </>
     );
 };
 
-export default Livraison;
+export default Beaute;

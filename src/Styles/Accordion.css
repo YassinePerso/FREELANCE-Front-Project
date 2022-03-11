@@ -1,13 +1,13 @@
 .accordion {
     min-width: 300px;
-    min-height: 50px;
+    max-height: 130px;
     /* margin: 100px auto 0; */
     border-radius: 3px;
-    background: #f1f1f1;
+    background-color: whitenvm use ;
 }
 
 .accordion-visible {
-    background: #afafaf;
+    background: #f4d0d0;
     width: 100%;
     color: rgb(0, 0, 0);
     cursor: pointer;
