@@ -38,8 +38,9 @@ const Home = () => {
             <section className={styles.containerHomeText}>
 
                 <div className={styles.divPHome}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus quae tempore illo error rem? Cumque adipisci aliquid debitis tempora suscipit! Officiis dolor quod     commodi facere ab id corporis ipsam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque placeat voluptatibus quibusdam a mollitia corrupti vel consequatur iste fugit. Libero tenetur molestiae id dolorum officia laboriosam, incidunt hic modi alias!
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus quae tempore illo error rem? Cumque adipisci aliquid debitis tempora suscipit! Officiis dolor quod     commodi facere ab id corporis ipsam!
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque placeat voluptatibus quibusdam a mollitia corrupti vel consequatur iste fugit. Libero tenetur molestiae id dolorum officia laboriosam, incidunt hic modi alias!
                 </p>
                 </div>
 

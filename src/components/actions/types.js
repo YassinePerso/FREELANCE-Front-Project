@@ -20,4 +20,4 @@ export const TOTAL_ITEMS = 'TOTAL_ITEMS';
 
 export const DETAILS = 'DETAILS';
 
-export const ADD_TO_LOCALSTORAGE = 'ADD_TO_LOCALSTORAGE';
+export const ORDER = 'ORDER';

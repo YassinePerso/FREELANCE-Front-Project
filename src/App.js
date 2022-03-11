@@ -22,6 +22,7 @@ import HuileCalmante from './components/Page/HuileCalmante';
 import HuileRelaxante from './components/Page/HuileRelaxante';
 import HuileAntiDouleur from './components/Page/HuileAntiDouleur';
 import Decouverte from './components/Page/Decouverte';
+import Achat from './components/Page/Achat';
 
 
 
@@ -51,6 +52,7 @@ function App() {
         <Route path="/HuileCalmante" element={<HuileCalmante />} />
         <Route path="/HuileRelaxante" element={<HuileRelaxante />} />
         <Route path="/HuileAntiDouleur" element={<HuileAntiDouleur />} />
+        <Route path="/Achat" element={<Achat />} />
       </Routes>
       <Footer />
     </>
