@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Product from './Product';
-// import '../Styles/Products.css';
 import styles from '../../Styles/FirstPage.module.css';
 import Marquee from '../Marquee';
 

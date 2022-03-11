@@ -1,11 +1,15 @@
 import React from 'react';
 import Marquee from '../Marquee';
 
+import styles from '../../Styles/Livraison.module.css'
+
 const Livraison = () => {
     return (
         <>
-        <Marquee name="livraison" />
-            <p style={{marginTop:"11rem",marginLeft:"20%",fontSize:"40px"}}>Page Livraison - Aucun produit pour l'instant</p>
+        <Marquee name="Livraison" />
+        <section className={styles.containerLivraison}>
+            <p>Page Beauté - Aucun produit pour l'instant</p>
+        </section>
         </>
     );
 };

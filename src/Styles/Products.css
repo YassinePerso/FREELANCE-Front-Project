@@ -1,7 +1,8 @@
 .containerProductComponent-yetz {
-    width: 100%;
-    height: 90vh;
+    width: 100vw;
+    height: 100%;
     display: flex;
+    background-color: blueviolet;
 }
 
 .product {
@@ -16,28 +17,26 @@
 
 .products h3 {
     text-align: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     letter-spacing: 0.1rem;
     /* font-style: italic; */
 }
 
-.box-img {
+/* .box-img {
     background-color: rgb(226,224,224);
-}
+} */
 
 .product img {
     width: 100%;
-    /* height: 300px; */
+    height: 260px;
     transition: all 0.4s ease-in-out;
-}
-.product:hover img {
-    transform: scale(1.05);
 }
 
 .product h3 {
     text-align: center;
     margin: 5px;
     color: rgb(53, 53, 53);
+    background-color: yellow;
 }
 .product h4 {
     text-align: center;
