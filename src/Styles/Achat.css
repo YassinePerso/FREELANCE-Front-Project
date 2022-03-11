@@ -1,0 +1,135 @@
+.containerHeaderAchat-yr {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid #000000;
+}
+
+
+.cart h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+}
+
+.cart {
+    /* background-color: rebeccapurple; */
+    height: 130vh;
+    width: 100%;
+}
+
+.cart-center-achat {
+    display: block;
+    background-color: yellow;
+}
+
+.cart-info-achat {
+    text-align: center;
+    background-color: #000000;
+    margin-top: 20px;
+
+}
+
+.achat-title-achat {
+    background-color: rgb(205, 50, 192) ;
+}
+/* 
+.single-cart-achat {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    margin: 10px 5px;
+    margin-top: 0;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: rgb(51, 46, 46);
+} */
+
+
+.fontChange-yzx-achat {
+    color: #000000;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fontChange-yzx-achat p {
+    font-size: 20px;
+}
+
+.counting-achat {
+    background-color: darkkhaki;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counting-achat button {
+    width: 25px;
+    border: none;
+    background-color: burlywood;
+}
+
+.price-achat {
+    background-color: coral;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****  Display Grid Single Cart  ****/
+.single-cart-achat {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    margin: 10px 5px;
+    margin-top: 0;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: springgreen;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:
+        1fr 4fr .8fr .8fr .8fr 1fr 1fr 1fr
+    ;
+    justify-self: center;
+}
+
+.single-cart-achat .cart-img-achat {
+    width: 80px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.single-cart-achat img {
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 664px) {
+    .cart-center-achat {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .cart-info-achat {
+        flex: 1;
+    }
+    
+    .single-cart-achat {
+        margin-right: 30px;
+    }
+}

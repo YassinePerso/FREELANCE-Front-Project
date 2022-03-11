@@ -362,14 +362,14 @@ const Todos = (state = initialState, action) => {
         }
 
         //Close the banner 
-        case BANNER_CLOSE:
-            state.items.forEach(item => {
-                item.isInCart = false
-            })
+        // case BANNER_CLOSE:
+        //     state.items.forEach(item => {
+        //         item.isInCart = false
+        //     })
 
-            return {
-                ...state
-            }
+        //     return {
+        //         ...state
+        //     }
 
         //Effacer le item
         case DELETE_ITEM:

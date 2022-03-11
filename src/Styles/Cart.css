@@ -1,3 +1,41 @@
+/*** Display Grid button Retour/Commander **/
+.containerButtonCart-jz-ts {
+    width: 100%;
+    height: 20vh;
+    margin-top: 20px;
+    border: 1px solid #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.containerButtonContinuerDeShopper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: .5px solid #000000;
+}
+.containerButtonContinuerDeShopper button {
+    font-size: clamp(10px, 9vw, 25px);
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.containerButtonCommander {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: .5px solid #000000;
+}
+.containerButtonCommander button {
+    font-size: clamp(10px, 9vw, 25px);
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+/**** END Display Grid button ****/
+
 .cart h3 {
     text-align: center;
     margin-top: 30px;
@@ -8,7 +46,7 @@
 
 .cart {
     /* background-color: rebeccapurple; */
-    height: 100vh;
+    height: 130vh;
     width: 100%;
 }
 
@@ -32,28 +70,66 @@
 }
 
 .sameItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
     flex: 0 0 30%;
-    color: rgb(61,61,61);
+    color: #000000;
     letter-spacing: 0.1rem;
-    font-style: italic;
+}
+.fontChange-yzx {
+    color: #000000;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fontChange-yzx p {
+    font-size: 20px;
 }
 
+.counting {
+    background-color: darkkhaki;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .counting button {
     width: 25px;
     border: none;
+    background-color: burlywood;
 }
-.counting span {
-    font-size: 18px;
-    padding: 0 5px;
+
+.price {
+    background-color: coral;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* .price {
-    color: crimson;
-} */
+
+/****  Display Grid Single Cart  ****/
+.single-cart {
+    background-color: springgreen;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:
+        1fr 4fr .8fr .8fr .8fr 1fr 1fr 1fr
+    ;
+    justify-self: center;
+}
 
 .single-cart .cart-img {
     width: 80px;
-    border: 1px solid lightgray;
-    background-color: #ccc;
+    overflow: hidden;
     border-radius: 10px;
 }
 
@@ -61,9 +137,14 @@
     width: 100%;
 }
 
+.delete-item {
+    background-color: cadetblue;
+}
+
 .delete-item .fa-trash {
     color: black;
     cursor: pointer;
+    width: 30px;
 }
 
 .cart-results {

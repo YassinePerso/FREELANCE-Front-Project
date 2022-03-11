@@ -4,6 +4,7 @@ import trash from '../../images/delete.png';
 import '../../Styles/Cart.css';
 import { connect } from 'react-redux';
 import { deleteItem, increaseItem, decreaseItem, getTotals } from '../../components/actions/itemActions'
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
 
@@ -14,10 +15,32 @@ const Cart = (props) => {
   //   props.getTotals();
   // }, [])
 
+  // const { pageC } = useParams();
+  let detailsCategory = props.item.items.find((item) => item.page_category);
+
 
     return (
         <div className='cart'>
-          <div className='inside-container'>
+          <section className="containerButtonCart-jz-ts">
+
+            <div className="containerButtonContinuerDeShopper">
+              <Link to={`/${detailsCategory.page_category}`} >
+                <button>
+                  Continuer de shopper
+                </button>
+              </Link>
+            </div>
+            <div className="containerButtonCommander">
+              <Link to="/Achat" >
+                <button>
+                  Commander
+                </button>
+              </Link>
+            </div>
+
+          </section>
+
+          <div className='inside-container-remake'>
           {cart.length === 0 ?
             <>
             <h3>Votre panier est vide.</h3>
@@ -38,9 +61,15 @@ const Cart = (props) => {
                     </div>
 
                     {/* TAUX  */}
-                    <p>{cart.taux}</p>
-                    <p>{cart.contenance}</p>
-                    <p>{cart.gout}</p>
+                    <div className="fontChange-yzx">
+                      <p>{cart.taux}</p>
+                    </div>
+                    <div className="fontChange-yzx">
+                      <p>{cart.contenance}</p>
+                    </div>
+                    <div className="fontChange-yzx">
+                      <p>{cart.gout}</p>
+                    </div>
 
                     <div className="counting">
                       <button onClick={() => {
@@ -85,9 +114,7 @@ const Cart = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  
   item:state.item
-
 })
 
 export default connect(mapStateToProps, {deleteItem, increaseItem, decreaseItem, getTotals})(Cart);

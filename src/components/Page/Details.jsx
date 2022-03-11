@@ -64,16 +64,10 @@ import Accordion from "../Accordion";
 
 const Details = (props) => {
   
-  // console.log(useParams().id);
   
   const { id } = useParams();
   let detailsProduct = props.item.items.find((item) => item._id === parseInt(id));
 
-  // const [theForm, setTheForm] = useState(false);
-
-  // function handleClickForm() {
-  //   setTheForm(!theForm);
-  // }
 
   return (
     <>

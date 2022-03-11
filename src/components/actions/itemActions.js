@@ -9,9 +9,17 @@ import {
     DECREASE_ITEM,
     TOTAL_ITEMS,
     DETAILS,
-    // ADD_TO_LOCALSTORAGE
+    ORDER,
 } from './types';
 
+
+
+// Order
+export const order = () => {
+    return {
+        type:ORDER
+    }
+}
 
 // for gettind the initial showing items
 export const getItems = () => {
