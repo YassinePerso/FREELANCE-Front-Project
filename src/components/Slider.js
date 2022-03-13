@@ -20,7 +20,7 @@ export default function Slider() {
         },
         {
             id: 4,
-            img: "https://images.pexels.com/photos/3597031/pexels-photo-3597031.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
         },
     ]
 

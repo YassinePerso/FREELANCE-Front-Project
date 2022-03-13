@@ -47,7 +47,6 @@ const Cart = (props) => {
             </>
             :
             <>
-            <h3>Panier</h3>
             <div className='cart-center'>
               <div className="cart-info">
                 {cart.map(cart => (
@@ -84,7 +83,7 @@ const Cart = (props) => {
                     </div>
 
                     <div className="price">
-                      <h4>{cart.prix * cart.count}€</h4>
+                      <h4>{cart.prix}0€</h4>
                     </div>
 
                     <div className="delete-item">

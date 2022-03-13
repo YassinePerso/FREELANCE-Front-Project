@@ -18,7 +18,7 @@ const Product = (props) => {
         <h3>{data.taux}</h3>
         <h3>{data.contenance}</h3>
         <h3>{data.gout}</h3>
-        <h3>{data.prix}€</h3>
+        <h3>{data.prix}0€</h3>
         {/* <div className="box-img">
                 <Link to={`/subCategory/${data.url}}`}>
                     <img src={data.img} alt="produit" />
