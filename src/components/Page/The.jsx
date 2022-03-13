@@ -23,7 +23,7 @@ const The = (props) => {
 
             <div className="inside-container">
                 <div className="products-center">
-                    {items.filter((elt) => elt.page_category === "Thé" && elt.url === "urlThé").map((product) => <Product key={product._id} data={product} AddToCart={() => AddToCart(product._id)} isInCart={product.isInCart}/>)}
+                    {items.filter((elt) => elt.page_category === "The" && elt.url === "urlThé").map((product) => <Product key={product._id} data={product} AddToCart={() => AddToCart(product._id)} isInCart={product.isInCart}/>)}
                 </div>
             </div>
         </div>

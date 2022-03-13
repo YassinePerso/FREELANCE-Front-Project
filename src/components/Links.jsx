@@ -10,8 +10,15 @@ const Links = (props) => {
   return (
     <section className={styles.containerLinks}>
       <div className={styles.links}>
-        Menu {">"} <Link key={props.index} to={`/${props.page}`}>{props.page}</Link> {">"}
-        <Link to={`/${props.page}/${props.id}`}>{props.id}</Link>
+        <Link to="/">
+            MENU
+        </Link>{">"}
+        <Link key={props.index} to={`/${props.page}`}>
+            {props.page}
+        </Link>{">"}
+        <Link to={`/${props.page}/${props.id}`}>
+          {props.id}
+          </Link>
       </div>
     </section>
   );

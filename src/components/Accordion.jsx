@@ -26,9 +26,9 @@ export default function Accordion(props) {
             onClick={toggleState}
             className="accordion-visible">
                 <span>{props.name}</span>
-                <img 
+                {/* <img 
                 className={toggle && "active"}
-                src={Chevron} alt="icon"/>
+                src={Chevron} alt="icon"/> */}
             </button>
             
             <div 

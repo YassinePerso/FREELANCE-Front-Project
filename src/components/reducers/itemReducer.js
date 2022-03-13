@@ -5,7 +5,7 @@ import {
     DELETE_ITEM,
     // TOGGLE_NAV,
     // CLOSE_NAVBAR,
-    BANNER_CLOSE,
+    // BANNER_CLOSE,
     INCREASE_ITEM,
     DECREASE_ITEM,
     TOTAL_ITEMS,
@@ -199,7 +199,7 @@ export const initialState = {
     _id: 11, 
     url: "urlThé",
     page_position: "first",
-    page_category: "Thé",
+    page_category: "The",
     title: "Infusion CBD Vitalité",
     img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
     taux: "10% de fleurs ",
@@ -216,7 +216,7 @@ export const initialState = {
     _id: 12, 
     url: "urlThé",
     page_position: "first",
-    page_category: "Thé",
+    page_category: "The",
     title: "Infusion CBD Digestion ",
     img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
     taux: "10% de fleurs ",
@@ -233,7 +233,7 @@ export const initialState = {
     _id: 13, 
     url: "urlThé",
     page_position: "first",
-    page_category: "Thé",
+    page_category: "The",
     title: "Thé Anti-Stress",
     img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
     taux: "5% de fleurs ",
@@ -402,7 +402,6 @@ const Todos = (state = initialState, action) => {
                 }
                 return item
             })
-
             return {
                 ...state,
                 cart:decResults
@@ -414,10 +413,10 @@ const Todos = (state = initialState, action) => {
         const totals = state.cart.reduce((prev, item) => {
             return prev + (item.prix * item.count)
         }, 0)
-            
+            const totalsFixed = totals.toFixed(2);
           return {
               ...state,
-              total:totals
+              total:totalsFixed
           }
 
         // Details Page
