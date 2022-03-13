@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Red Rose', cursive;
 }
 
 li {
@@ -17,24 +18,14 @@ a {
   background-color: yellow;
 }
 .products {
-  /* background-color: rgb(128, 30, 30); */
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  /* display: flex; */
-  /* background-color: brown; */
 }
 
 .inside-container { 
-  /* max-width: 1280px; */
   height: 100vh;
   background-color: aqua;
-  /* display: flex; */
-  /* display: flex; */
-  /* max-width: 1400px; */
-  /* margin: 0 auto;
-  padding: 0 10px; */
-  /* background-color: aqua; */
 }
 
 @media screen and (max-width:700px) {
