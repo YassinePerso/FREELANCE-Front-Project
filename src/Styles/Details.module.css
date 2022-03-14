@@ -30,7 +30,7 @@
     height: 100%;
     border: none;
     color: #000000;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 .buttonGridDetails p {
     margin: auto;
@@ -48,7 +48,8 @@
 
 /* GRID PRODUCT */
 .detailsCenter {
-    border: 1px solid lightgrey;
+    background-color: blueviolet;
+    height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -61,7 +62,6 @@
 }
 
 .detailsImg img {
-    border: 5px solid #333;
     height: 100%;
     margin: 0 auto;
     text-align: center;
@@ -120,11 +120,11 @@
 }
     
     .detailsCenter {
-        height: 100vh;
+        height: 80vh;
         /* background-color: yellow; */
         display: grid;
         grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 4fr 1fr;
     }
 
     .detailsBtn {
@@ -152,16 +152,19 @@
     .detailsImg {
         height: 100%;
         width: 100%;
-        background-color: rgb(168, 167, 167);
+        /* background-color: rgb(168, 167, 167); */
         overflow: hidden;
     }
     .detailsImg img {
         width:100%;
-        border: 5px solid #333;
+        /* border: 5px solid #333; */
         height: 100%;
     }
     .containerLinkRetour {
         padding: 3rem 6rem 3rem 2rem;
+    }
+    .buttonGridDetails button {
+        background-color: #ffffff;
     }
 }
 

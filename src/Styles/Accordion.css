@@ -2,22 +2,24 @@
     min-width: 300px;
     max-height: 110px;
     border-radius: 3px;
-    padding: 1px;
+    /* height: 70%; */
+    padding-left: 10px;
     /* background-color: aqua; */
 }
 
 .accordion-visible {
-    background: #f4d0d0;
-    border: none;
+    background-color: inherit;
+    /* border: 1px solid black; */
+    /* border: none; */
     width: 100%;
-    height: 60px;
+    height: 40px;
     color: rgb(0, 0, 0);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    /* border-top-left-radius: 3px;
+    border-top-right-radius: 3px; */
 }
 .accordion-visible span {
     padding: 15px 0;
@@ -85,10 +87,17 @@
         /* background: #943f3f; */
         border: none;
         width: 100%;
-        height: 40px;
+        height: 25px;
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    .accordion-visible span {
+        padding: 15px 0;
+        font-size: 15px;
+        font-weight: bolder;
+        text-transform: capitalize;
+    }
+    
 }

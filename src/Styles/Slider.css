@@ -67,22 +67,34 @@ button {
     transform: translateY(-60%);
   }
   
-/*   
+
   .container-dots {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
   }
   .dot {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 3px solid #f1f1f1;
-    margin: 0 5px;
+    width: 80px;
+    height: 3px;
+    /* border-radius: 50%; */
+    /* border: 3px solid #f1f1f1; */
+    /* margin: 0 5px; */
     background: #f1f1f1;
   }
-  .dot.active {
-    background: rgb(32, 32, 32);
-  } */
+  /* .dot.active {
+    border: 3px solid #333;
+    background: #333;
+  }
+   */
+  @media screen and (max-width: 800px) {
+    .dot {
+      width: 50px;
+      height: 3px;
+    }
+  }
