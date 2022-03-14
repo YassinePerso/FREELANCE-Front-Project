@@ -34,6 +34,18 @@ const Achat = (props) => {
         ) : (
           <>
             {/* <div className="cart-center-achat"> */}
+                          <section className="containerThreeButtonsPageAchat">
+                              <button>
+                                CREER MON COMPTE
+                              </button>
+                              <button>
+                                CLIENT ENREGISTRE
+                              </button>
+                              <button>
+                                CONTINUER EN TANT QU'INVITE
+                              </button>
+                          </section>
+
               <div className="cart-info-achat">
                 {cart.map((cart) => (
                   <>
@@ -67,13 +79,6 @@ const Achat = (props) => {
                         </h5>
                       </div>
 
-                      <div className="buttonModifierAchatPage">
-                          <button>
-                            <Link to="/">
-                              Modifier
-                            </Link>
-                          </button>
-                        </div>
 
                     </div>
                     {/*************** MOBILE  ****************/}
@@ -112,13 +117,6 @@ const Achat = (props) => {
                           </h4>
                         </div>
 
-                        <div className="buttonModifierAchatPage">
-                          <button>
-                            <Link to="/">
-                              Modifier
-                            </Link>
-                          </button>
-                        </div>
 
                       </section>
                     </div>
@@ -126,19 +124,14 @@ const Achat = (props) => {
                 ))}
               </div>
 
-              <section className="containerThreeButtonsPageAchat">
-
+              <section className="retourButtonAchat">
+                <Link to="/">
                   <button>
-                    CLIENT ENREGISTRE
+                    Retour
                   </button>
-                  <button>
-                    CONTINUER EN TANT QU'INVITE
-                  </button>
-                  <button>
-                    CREER MON COMPTE
-                  </button>
-
+                </Link>
               </section>
+
             {/* </div> */}
           </>
         )}
