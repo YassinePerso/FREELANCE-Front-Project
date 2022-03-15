@@ -31,7 +31,7 @@ export const initialState = {
     Provenance: "France",
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
-    count: 1,
+    count: 0,
     // isInCart: false
 },
 {

@@ -8,7 +8,7 @@ const Livraison = () => {
         <>
         <Marquee name="Livraison" />
         <section className={styles.containerLivraison}>
-            <p>Page Beauté - Aucun produit pour l'instant</p>
+            <p>PageLivraison - Aucun produit pour l'instant</p>
         </section>
         </>
     );

@@ -13,11 +13,11 @@ const Links = (props) => {
         <Link to="/">
             MENU
         </Link>{">"}
-        <Link key={props.index} to={`/${props.page}`}>
-            {props.page}
+        <Link to={`/${props.page_category}`}>
+            {props.page_category}
         </Link>{">"}
-        <Link to={`/${props.page}/${props.id}`}>
-          {props.id}
+        <Link to="">
+          {props.title}
           </Link>
       </div>
     </section>
