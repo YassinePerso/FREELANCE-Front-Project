@@ -41,12 +41,23 @@ const Huile = (props) => {
                 {huilePage.map((elt) => {
                     return (
                         <>
+                        {/* <main className={styles.containerCategory}> */}
+
                             <Link to={`/${elt.url}`}>
                                 <section className={styles.containerProductsFirstPage}>
-                                    <span>{elt.title}</span>
-                                    <img src={elt.img} alt="img" />
+
+                                    <div className={styles.divSpanCat}>
+                                        <span>{elt.title}</span>
+                                    </div>
+
+                                    <div className={styles.divImgCat}>
+                                        <img src={elt.img} alt="img" />
+                                    </div>
+
                                 </section>
                             </Link>
+
+                        {/* </main> */}
                         </>
                     );
                 })}

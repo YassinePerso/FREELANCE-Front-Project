@@ -15,11 +15,12 @@
     border-right: .5px solid #000000;
 }
 .containerButtonContinuerDeShopper button {
-    font-size: clamp(10px, 9vw, 25px);
+    font-size: clamp(10px, 4.5vw, 35px);
+    font-weight: bold;
     width: 100%;
     height: 100%;
     border: none;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(138, 136, 139);
 }
 .containerButtonCommander {
     display: flex;
@@ -28,11 +29,12 @@
     border-right: .5px solid #000000;
 }
 .containerButtonCommander button {
-    font-size: clamp(10px, 9vw, 25px);
+    font-size: clamp(10px, 5vw, 35px);
+    font-weight: bold;
     width: 100%;
     height: 100%;
     border: none;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(138, 136, 139);
 }
 /*********************** END Display Grid button ************************/
 
@@ -45,13 +47,14 @@
 }
 
 .cart {
-    /* background-color: rebeccapurple; */
-    height: 130vh;
+    background-color: rgb(138, 136, 139);
+    height: 120vh;
     width: 100%;
 }
 .cart-center {
     display: flex;
-    /* background-color: aqua ; */
+    height: 100%;
+    /* background-color: rgb(130, 209, 66) ; */
 }
 .cart-info {
     text-align: center;
@@ -117,11 +120,12 @@
 
 /*************  Display Grid Single Cart  *****************/
 .single-cart {
+    width: 100%;
     background-color: springgreen;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns:
-        1fr 3fr .8fr .8fr .8fr 1fr 1fr 1fr
+        1fr 3fr 1fr 1fr 1fr .8fr 1fr 1fr
     ;
     justify-self: center;
     padding: 0;
@@ -187,14 +191,17 @@
     font-weight: 600;
 }
 
+/*** DISPLAY NONE ***/
+.single-cart-mobile {
+    display: none;
+}
+
 
 /******************* MEDIA QUERIES ***********************/
 @media screen and (max-width: 1000px) {
     .cart-center {
         display: block;
-        background-color: aqua ;
     }
-
     .cart-info {
         flex: 1;
     }
@@ -202,24 +209,44 @@
         width: 300px;
         margin-left: 65%;
         align-self: flex-start;
-        /* margin-top: 0; */
+        background-color: aqua;
     }
     .cart-results h3 {
         margin-top: 10px;
         text-transform: capitalize;
     }
-    .single-cart {
-        /* margin-right: 30px; */
-    }
 }
 
 /********************    MEDIA QUERIES ---> 850px    **************************/
 @media screen and (max-width:850px) {
-    .single-cart {
-        background-color: #eee34d;
+    /****** GRID BUTTON ******/
+    .containerButtonCart-jz-ts {
+        width: 100%;
+        height: 14vh;
+        margin-top: 20px;
+        border: 1px solid #333;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
+    /******** CART RESULT *********/
     .cart-results {
-        margin-left: 55%;
+        width: 280px;
+        height: 150px;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        border: 1px solid #333;
+        /* align-self: flex-start; */
+        background-color: rgb(165, 155, 16);
+        /* margin-top: 0; */
+    }
+    .single-cart {
+        display: none;
+    }
+    .single-cart-mobile {
+        background-color: black;
+        width: 100%;
+        height: 80vh;
     }
 }

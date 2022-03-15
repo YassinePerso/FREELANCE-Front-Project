@@ -27,13 +27,6 @@ const Achat = (props) => {
       </section>
 
       <div className="inside-container-remake">
-        {cart.length === 0 ? (
-          <>
-            <h3>Vous avez {cart.length} produit dans votre panier.</h3>
-          </>
-        ) : (
-          <>
-            {/* <div className="cart-center-achat"> */}
                           <section className="containerThreeButtonsPageAchat">
                               <button>
                                 CREER MON COMPTE
@@ -45,6 +38,13 @@ const Achat = (props) => {
                                 CONTINUER EN TANT QU'INVITE
                               </button>
                           </section>
+        {cart.length === 0 ? (
+          <>
+            <h3>Vous avez {cart.length} produit dans votre panier.</h3>
+          </>
+        ) : (
+          <>
+            {/* <div className="cart-center-achat"> */}
 
               <div className="cart-info-achat">
                 {cart.map((cart) => (

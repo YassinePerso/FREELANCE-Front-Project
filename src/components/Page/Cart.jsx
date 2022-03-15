@@ -50,6 +50,7 @@ const Cart = (props) => {
             <div className='cart-center'>
               <div className="cart-info">
                 {cart.map(cart => (
+                  <>
                   <div className="single-cart" key={cart._id}>
                     <div className="cart-img">
                       <img src={cart.img} alt="présentation" />
@@ -93,6 +94,56 @@ const Cart = (props) => {
                       }} />
                     </div>
                   </div>
+                  
+                  {/*************** MOBILE  ****************/}
+
+                  <div className="single-cart-mobile" key={cart._id}>
+                    <div className="cart-img-mobile">
+                      <img src={cart.img} alt="présentation" />
+                    </div>
+
+                    <div className="cart-title-mobile sameItem">
+                      <h4>{cart.title}</h4>
+                    </div>
+
+                    {/* TAUX  */}
+                    <div className="fontChange-yzx-mobile">
+                      <p>{cart.taux}</p>
+                    </div>
+                    <div className="fontChange-yzx-mobile">
+                      <p>{cart.contenance}</p>
+                    </div>
+                    <div className="fontChange-yzx-mobile">
+                      <p>{cart.gout}</p>
+                    </div>
+
+                    <div className="counting-mobile">
+                      <button onClick={() => {
+                          props.decreaseItem(cart._id);
+                          props.getTotals();
+                      }}>-</button>
+                      <button>{cart.count}</button>
+                      <button onClick={() => {
+                          props.increaseItem(cart._id);
+                          props.getTotals();
+                      }}>+</button>
+                    </div>
+
+                    <div className="price-mobile">
+                      <h4>{cart.prix}0€</h4>
+                    </div>
+
+                    <div className="delete-item-mobile">
+                      <img src={trash} className="fa-trash" alt="delete icon" onClick={() => {
+                          props.deleteItem(cart._id);
+                          props.getTotals();
+                      }} />
+                    </div>
+                  </div>
+
+                {/*********************  MOBILE  **********************/}
+
+                </>
                 ))}
               </div>
               {/* cart results */}
@@ -102,7 +153,7 @@ const Cart = (props) => {
                 {/* <h4>Frais de livraison: {props.item.total >= 90 ? <span>Gratuit</span> : `+${props.item.shipping}`}</h4> */}
                 <h4>Frais de livraison:<span>Gratuit</span></h4>
                 {/* <h4>Prix: <span>WIP</span></h4> */}
-                <h4>Prix total: <span>{props.item.total}€</span></h4>
+                <h4>Prix total: <span> {props.item.total}€</span></h4>
               </div>
             </div>
             </>

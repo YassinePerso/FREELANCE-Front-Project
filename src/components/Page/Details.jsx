@@ -36,9 +36,8 @@ const Details = (props) => {
 
           {/* LINKS component */}
           <Links
-            key={props._id}
-            page={`${props.detailsPageCategory}`}
-            id={`${props.detailsProduct}`}
+            page_category={detailsProduct.page_category}
+            title={detailsProduct.title}
             product={`${props.detailsTitle}`}
           />
           {/* LINKS component -- END*/}
