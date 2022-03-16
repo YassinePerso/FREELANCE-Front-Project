@@ -41,7 +41,6 @@ const Huile = (props) => {
                 {huilePage.map((elt) => {
                     return (
                         <>
-                        {/* <main className={styles.containerCategory}> */}
 
                             <Link to={`/${elt.url}`}>
                                 <section className={styles.containerProductsFirstPage}>
@@ -57,11 +56,17 @@ const Huile = (props) => {
                                 </section>
                             </Link>
 
-                        {/* </main> */}
                         </>
                     );
                 })}
             </div>
+            <section className={styles.retourFirstPage}>
+                <Link to="">
+                    <button>
+                        Retour
+                    </button>
+                </Link>
+            </section>
             </>
     );
 };

@@ -1,4 +1,5 @@
 .navbar {
+	border-bottom: 1px solid #000000;
 	height: 80px;
 	width: 100%;
     z-index: 1000;

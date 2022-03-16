@@ -14,7 +14,7 @@ const HuileCalmante = (props) => {
 
     return (
         <div className="products">
-            <Links page="Huile" id="Huile Calmante"/>
+            <Links page_category="Huile" title="Huile Calmante"/>
 
             {/* <h2>AUTRE PRODUCT</h2> */}
 
