@@ -21,20 +21,26 @@
 }
 
 .cart-achat {
-    height: 130%;
+    height: 100vh;
     width: 100%;
-    /* background-color: yellow; */
+    background-color: yellow;
 }
 
-.cart-center-achat {
+/* .cart-center-achat {
     display: block;
-    /* background-color: rgb(93, 226, 208); */
+    height: 100%;
+    background-color: rgb(93, 226, 208);
+} */
+
+.inside-container-remake {
+    height: 100%;
 }
 
 .cart-info-achat {
     text-align: center;
     /* background-color: #e93e3e; */
     margin-top: 20px;
+    height: 100%;
     /* margin-bottom: 100px; */
     display: flex;
     justify-content: center;

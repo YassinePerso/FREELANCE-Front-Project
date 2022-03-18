@@ -21,8 +21,7 @@ const HuileRelaxante = (props) => {
         {items
           .filter(
             (elt) =>
-              elt.page_category === "Huile" && elt.url === "HuileRelaxante"
-          )
+              elt.page_category === "Huile" && elt.url === "HuileRelaxante")
           .map((product) => (
             <Product
               key={product._id}
