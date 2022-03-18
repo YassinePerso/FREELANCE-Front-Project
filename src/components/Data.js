@@ -1,6 +1,5 @@
 
     export const Data = [
-         // HUILE CALMANTE //
   {
     _id: 1,
     url: "HuileCalmante",
@@ -17,7 +16,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 2,
@@ -34,7 +32,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 3,
@@ -52,9 +49,7 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-    // HUILE RELAXANTE //
 {
     _id: 4, 
     url: "HuileRelaxante",
@@ -71,7 +66,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 5, 
@@ -88,7 +82,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 6, 
@@ -105,9 +98,7 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-// HUILE ANTI-STRESS //
 {
     _id: 7, 
     url: "HuileAntiStress",
@@ -124,9 +115,7 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-// HUILE ANTI-DOULEUR //
 {
     _id: 8, 
     url: "HuileAntiDouleur",
@@ -143,7 +132,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 9, 
@@ -160,7 +148,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 10, 
@@ -177,9 +164,7 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-////// Thé //////
 {
     _id: 11, 
     url: "urlThé",
@@ -195,7 +180,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 12, 
@@ -212,7 +196,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 13, 
@@ -229,9 +212,7 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-// AUTRE (bonbon) //
 {
     _id: 14, 
     subPage: "SubAutre",
@@ -248,7 +229,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 15, 
@@ -264,7 +244,6 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 16, 
@@ -282,6 +261,5 @@
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
     ]

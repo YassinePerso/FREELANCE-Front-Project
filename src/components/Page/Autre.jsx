@@ -1,7 +1,7 @@
 import React from 'react';
 // import '../../Styles/Products.css';
 import { connect } from 'react-redux';
-import { getItems, AddToCart, bannerClose} from '../actions/itemActions';
+import { getItems, AddToCart } from '../actions/itemActions';
 import Product from '../Product';
 import Marquee from '../Marquee';
 import styles from "../../Styles/SubCategory.module.css";
@@ -42,4 +42,4 @@ const Autre = (props) => {
 const mapStateToProps = (state) => ({
     item:state.item
 })
-export default connect(mapStateToProps, {getItems, AddToCart, bannerClose}) (Autre);
+export default connect(mapStateToProps, {getItems, AddToCart}) (Autre);

@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-// import BackImg from '../../images/weed.jpg';
-// import Products from './Products';
 import styles from "../../Styles/Home.module.css";
 import { Zoom } from "react-reveal";
 import { Link } from "react-router-dom";

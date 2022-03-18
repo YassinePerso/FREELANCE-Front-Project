@@ -2,24 +2,24 @@ import {
     GET_ITEMS,
     ADD_ITEMS,
     DELETE_ITEM,
-    TOGGLE_NAV,
-    CLOSE_NAVBAR,
-    BANNER_CLOSE,
+    // TOGGLE_NAV,
+    // CLOSE_NAVBAR,
+    // BANNER_CLOSE,
     INCREASE_ITEM,
     DECREASE_ITEM,
     TOTAL_ITEMS,
     DETAILS,
-    ORDER,
+    // ORDER,
 } from './types';
 
 
 
 // Order
-export const order = () => {
-    return {
-        type:ORDER
-    }
-}
+// export const order = () => {
+//     return {
+//         type:ORDER
+//     }
+// }
 
 // for gettind the initial showing items
 export const getItems = () => {
@@ -28,21 +28,21 @@ export const getItems = () => {
     }
 }
 
-// apparition - disparition navbar
-export const toggleNav = () => dispatch => {
+// // apparition - disparition navbar
+// export const toggleNav = () => dispatch => {
 
-    dispatch({
-        type:TOGGLE_NAV
-    })
-}
+//     dispatch({
+//         type:TOGGLE_NAV
+//     })
+// }
 
 // Closing nav bar
-export const closeNavbar = () => dispatch => {
+// export const closeNavbar = () => dispatch => {
 
-    dispatch({
-        type:CLOSE_NAVBAR
-    })
-}
+//     dispatch({
+//         type:CLOSE_NAVBAR
+//     })
+// }
 
 //Add to cart functionnality
 export const AddToCart = (id) => dispatch => {
@@ -54,13 +54,13 @@ export const AddToCart = (id) => dispatch => {
 }
 
 
-//close the banner
-export const bannerClose = () => dispatch => {
+// //close the banner
+// export const bannerClose = () => dispatch => {
 
-    dispatch({
-        type:BANNER_CLOSE,
-    })
-}
+//     dispatch({
+//         type:BANNER_CLOSE,
+//     })
+// }
 
 //Effacer les items depuis le panier
 export const deleteItem = (id) => dispatch => {

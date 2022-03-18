@@ -19,10 +19,6 @@ const Navbar = (props) => {
 		setOpen(false);
 	};
 
-	// function GoToCart() {
-	// 	// eslint-disable-next-line no-restricted-globals
-	// 	history.push('/Cart')
-	// }
 
   return (
     <nav className="navbar">

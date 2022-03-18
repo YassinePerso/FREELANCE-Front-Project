@@ -25,7 +25,7 @@ const Details = (props) => {
         <div className={styles.insideContainerDetails}>
           <div className={styles.detailsBtn}>
             <div className={styles.buttonGridDetails}>
-              <p>{detailsProduct.prix}€</p>
+              <p>{detailsProduct.prix}0€</p>
             </div>
             <div className={styles.buttonGridDetails}>
               <button onClick={() => props.AddToCart(detailsProduct._id)}>
@@ -34,29 +34,21 @@ const Details = (props) => {
             </div>
           </div>
 
-          {/* LINKS component */}
           <Links
             page_category={detailsProduct.page_category}
             title={detailsProduct.title}
             product={`${props.detailsTitle}`}
           />
-          {/* LINKS component -- END*/}
 
-          {/* GRID PRODUCT */}
           <section className={styles.detailsCenter}>
 
 
-            {/* GRID -- 1 */}
             <div className={styles.detailsImg}>
-              {/* <img src={`/${detailsProduct.img}`} alt="product" /> */}
               <Slider />
             </div>
 
 
-            {/* GRID -- 2 */}
             <section className={styles.detailsInfoGrid}>
-
-              {/* <h4 className={styles.detailsTitle}>{detailsProduct.title}</h4> */}
 
 
               <Accordion name="DESCRIPTION" description={detailsProduct.description}/>
@@ -67,7 +59,6 @@ const Details = (props) => {
               <Accordion name="UTILISATION" description={detailsProduct.utilisation}/>
               <Accordion name="PROVENANCE" description={detailsProduct.Provenance}/>
               
-              {/* </div> */}
             </section>
           </section>
           <section className={styles.containerLinkRetour}>
@@ -78,7 +69,6 @@ const Details = (props) => {
             </button>
           </section>
 
-          {/* END -----  GRID PRODUCT */}
         </div>
       </div>
     </>

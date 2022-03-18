@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import '../Styles/Accordion.css';
-import Chevron from '../images/chevron.png'
+
 
 export default function Accordion(props) {
 
@@ -26,9 +26,6 @@ export default function Accordion(props) {
             onClick={toggleState}
             className="accordion-visible">
                 <span>{props.name}</span>
-                {/* <img 
-                className={toggle && "active"}
-                src={Chevron} alt="icon"/> */}
             </button>
             
             <div 
