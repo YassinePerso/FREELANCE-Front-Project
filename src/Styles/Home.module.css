@@ -51,6 +51,18 @@
       }
 
     /********** animation KEYFRAMES ************/
+    @media screen and (max-width: 800px) {
+        #divOnAnimations h1 {
+            font-size: 45px;
+        } 
+        #divOnAnimations .h1Two .spanTwo {
+            margin-bottom: 0px;
+        }
+        #divOnAnimations .h1Three {
+            margin-bottom: 160px;
+        }
+    }
+
     @keyframes reveal {
         0% {
           transform: translate(0,100%);
@@ -152,7 +164,6 @@
 }
 /** DISPLAY : GRID **/
 .containerHomeButton {
-    /* background-color: greenyellow; */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
