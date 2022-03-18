@@ -20,6 +20,7 @@
     padding: 15px;
 }
 .productDetails span {
+    font-size: 15px;
     padding: 3px 17px;
     border-radius: 20px;
     background-color: #f4d0d0;
@@ -64,6 +65,17 @@ overflow: hidden;
 }
 
 
+@media screen and (max-width: 800px) {
+    .product {
+        border: 0.1px solid rgb(0, 0, 0);
+        max-width: 187px;
+        max-height: 300px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 7fr .5fr .5fr .5fr .5fr .5fr;
+    }
+}
 
 
 

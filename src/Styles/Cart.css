@@ -1,4 +1,3 @@
-/******* Display Grid button Retour/Commander ********/
 .containerButtonCart-jz-ts {
     width: 100%;
     height: 20vh;
@@ -20,7 +19,7 @@
     width: 100%;
     height: 100%;
     border: none;
-    background-color: rgb(138, 136, 139);
+    background-color: #ffffff;
 }
 .containerButtonCommander {
     display: flex;
@@ -34,9 +33,16 @@
     width: 100%;
     height: 100%;
     border: none;
-    background-color: rgb(138, 136, 139);
+    background-color: #ffffff;
 }
-/*********************** END Display Grid button ************************/
+
+
+
+/**************************************  CART  *****************************************/
+
+.inside-container-remake {
+    height: 100vh;
+}
 
 .cart h3 {
     text-align: center;
@@ -47,27 +53,37 @@
 }
 
 .cart {
-    background-color: rgb(138, 136, 139);
-    height: 120vh;
+    height: 100vh;
     width: 100%;
-    /* overflow-x: hidden; */
+    background-color: yellow;
+}
+
+.inside-container-remake {
+    height: 100%;
+    background-color: aqua;
 }
 .cart-center {
-    display: flex;
-    height: 100%;
-    /* background-color: rgb(130, 209, 66) ; */
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    /* background-color: red; */
 }
 .cart-info {
+    height: 100%;
     text-align: center;
-    /* background-color: brown; */
     padding: 10px;
+    background-color: rgb(241, 107, 208);
+    width: 100%;
 }
 .single-cart {
     display: flex;
     justify-content: space-between;
-    border: 1px solid lightgray;
+    border: 1px solid #000000;
     margin: 10px 5px;
     margin-top: 0;
+    /* margin-bottom: 5px; */
     align-items: center;
     background-color: rgb(236,236,236);
 }
@@ -77,14 +93,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
-    flex: 0 0 30%;
+    /* background-color: yellow; */
+    /* flex: 0 0 30%; */
     color: #000000;
     letter-spacing: 0.1rem;
 }
 .fontChange-yzx {
     color: #000000;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -93,36 +109,12 @@
 }
 .fontChange-yzx p {
     font-size: 20px;
-}
-.counting {
-    background-color: darkkhaki;
-    width: 100%;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.counting button {
-    width: 25px;
-    border: none;
-    background-color: burlywood;
-}
-.price {
-    background-color: coral;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
-
-
-/*************  Display Grid Single Cart  *****************/
+}
 .single-cart {
     width: 100%;
-    background-color: springgreen;
+    /* background-color: springgreen; */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns:
@@ -139,7 +131,7 @@
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    /* background-color: #000000; */
     overflow: hidden;
 }
 .single-cart img {
@@ -147,8 +139,31 @@
     height: 90%;
     border-radius: 10px;
 }
+.counting {
+    /* background-color: darkkhaki; */
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counting button {
+    width: 25px;
+    border: none;
+    /* background-color: burlywood; */
+}
+.price {
+    /* background-color: coral; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .delete-item {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 .delete-item .fa-trash {
     color: black;
@@ -158,16 +173,14 @@
 
 
 
-
-/********* CART Result div ***********/
+/**********  CART Result  ***********/
 .cart-results {
-    border: 1px solid grey;
-    /* padding: 10px; */
-    /* margin-top: 30px; */
-    width: 4000px;
+    border: 1px solid #000000;
+    width: 280px;
     height: 180px;
     margin-top: 10px;
-    background-color: #df9494;
+    margin-right: 10px;
+    /* background-color: #df9494; */
 }
 .cart-results h3 {
     text-align: center;
@@ -192,25 +205,22 @@
     font-weight: 600;
 }
 
-/*** DISPLAY NONE ***/
 .single-cart-mobile {
     display: none;
 }
 
-
-/******************* MEDIA QUERIES ***********************/
 @media screen and (max-width: 1000px) {
     .cart-center {
         display: block;
     }
-    .cart-info {
+    /* .cart-info {
         flex: 1;
-    }
+    } */
     .cart-results {
         width: 300px;
         margin-left: 65%;
         align-self: flex-start;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     .cart-results h3 {
         margin-top: 10px;
@@ -218,9 +228,14 @@
     }
 }
 
-/********************    MEDIA QUERIES ---> 850px    **************************/
 @media screen and (max-width:850px) {
-    /****** GRID BUTTON ******/
+    
+    .cart {
+        /* background-color:rgb(165, 155, 16); */
+        height: 160vh;
+    }
+
+    /*** General Grid ***/
     .containerButtonCart-jz-ts {
         width: 100%;
         height: 14vh;
@@ -230,24 +245,103 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+    .cart-info {
+        padding: 0;
+        /* background-color: #000000; */
+        width: 100%;
+        height: 100%;
+    }
+    .cart-center {
+        height: 20%;
+    }
+    
+    .single-cart {
+        display: none;
+    }
+    .cart-center {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
-    /******** CART RESULT *********/
+    .single-cart-mobile {
+        /* background-color: orange; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+
+
+
+
+    /*** First GRID Image Part ***/
+    .gridCartMobileImg {
+        /* overflow: hidden; */
+        height: 100%;
+        width: 100%;
+    }
+    .gridCartMobileImg img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*** Second GRID Infos Part ***/
+    .gridCartMobileInfos {
+        /* background-color: aqua; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr .2fr .2fr .1fr .9fr;
+    }
+    .cart-title-mobile h4 {
+        font-size: 15px;
+    }
+    .fontChange-yzx-mobile {
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 3px;
+    }
+    .fontChange-yzx-mobile p {
+        font-size: 15px;
+    }
+    .counting-mobile {
+        /* background-color: orange; */
+        display: flex;
+    }
+    .counting-mobile button {
+        font-weight: bold;
+        width: 20px;
+        border: none;
+        /* background-color: burlywood; */
+    }
+    .price-mobile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; 
+    }
+    .delete-item-mobile {
+        text-align: end;
+        padding-right: 5px;
+        /* padding-bottom: 5px; */
+        margin-bottom: 5px;
+    }
+
+
+
+
+
+
+
+    /*** Cart Result ***/
     .cart-results {
         width: 280px;
         height: 150px;
         margin-left: 1rem;
         margin-top: 3rem;
         border: 1px solid #333;
-        /* align-self: flex-start; */
-        background-color: rgb(165, 155, 16);
-        /* margin-top: 0; */
-    }
-    .single-cart {
-        display: none;
-    }
-    .single-cart-mobile {
-        background-color: black;
-        width: 100%;
-        height: 80vh;
+        /* background-color: rgb(165, 155, 16); */
     }
 }

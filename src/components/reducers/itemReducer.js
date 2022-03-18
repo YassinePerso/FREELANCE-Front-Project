@@ -1,11 +1,7 @@
 import {
-    // ADD_TO_LOCALSTORAGE,
     GET_ITEMS,
     ADD_ITEMS,
     DELETE_ITEM,
-    // TOGGLE_NAV,
-    // CLOSE_NAVBAR,
-    // BANNER_CLOSE,
     INCREASE_ITEM,
     DECREASE_ITEM,
     TOTAL_ITEMS,
@@ -15,7 +11,6 @@ import {
 
 export const initialState = {
     items:[
-  // HUILE CALMANTE //
   {
     _id: 1,
     url: "HuileCalmante",
@@ -32,7 +27,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 2,
@@ -49,7 +43,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 3,
@@ -67,9 +60,7 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-    // HUILE RELAXANTE //
 {
     _id: 4, 
     url: "HuileRelaxante",
@@ -86,7 +77,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 5, 
@@ -103,7 +93,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 6, 
@@ -120,9 +109,7 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-// HUILE ANTI-STRESS //
 {
     _id: 7, 
     url: "HuileAntiStress",
@@ -139,9 +126,7 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-// HUILE ANTI-DOULEUR //
 {
     _id: 8, 
     url: "HuileAntiDouleur",
@@ -158,7 +143,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 9, 
@@ -175,7 +159,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 10, 
@@ -192,9 +175,7 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-////// Thé //////
 {
     _id: 11, 
     url: "urlThé",
@@ -210,7 +191,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 12, 
@@ -227,7 +207,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 13, 
@@ -244,9 +223,7 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
-// AUTRE (bonbon) //
 {
     _id: 14, 
     subPage: "SubAutre",
@@ -263,7 +240,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 15, 
@@ -279,7 +255,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
 {
     _id: 16, 
@@ -297,7 +272,6 @@ export const initialState = {
     description: "description description description",
     utilisation: "utilisation utilisation utilisation",
     count: 1,
-    // isInCart: false
 },
     ],
     cart: [],
@@ -313,33 +287,17 @@ const Todos = (state = initialState, action) => {
     switch(action.type) {
 
 
-        // Récupérer le state initial
         case GET_ITEMS:
              return {
                  ...state
              }
-             // TOGGLE navigation APPARITION
-        // case TOGGLE_NAV:
-        //      return {
-        //          ...state,
-        //          isOpen:!state.isOpen
-        //      }
-             //close navbar
-        // case CLOSE_NAVBAR:
-        //     if (state.isOpen === true) {
-        //         return {
-        //             ...state,
-        //             isOpen:false
-        //         }
-        //     }
-            //Add To Cart functionnality
+
         // eslint-disable-next-line no-fallthrough
         case ADD_ITEMS:
 
         let check = state.cart.find(item => item._id === action.payload);
 
         if (!check) {
-            // bringing only the items that match the id 
             let items = state.items.filter(item => item._id === action.payload)
             let itemsCart = [...state.cart, ...items]
 
@@ -353,7 +311,6 @@ const Todos = (state = initialState, action) => {
             let items = state.items.filter(item => item._id === action.payload);
             items.forEach(item => {
                 item.isInCart = true
-                // alert('Deja dans le panier')
             })
 
             return {
@@ -361,17 +318,7 @@ const Todos = (state = initialState, action) => {
             }
         }
 
-        //Close the banner 
-        // case BANNER_CLOSE:
-        //     state.items.forEach(item => {
-        //         item.isInCart = false
-        //     })
 
-        //     return {
-        //         ...state
-        //     }
-
-        //Effacer le item
         case DELETE_ITEM:
 
         const filteredCart = state.cart.filter(item => item._id !== action.payload);
@@ -380,7 +327,6 @@ const Todos = (state = initialState, action) => {
                 cart:filteredCart
             }
 
-        //Augmenter le nombre d'articles
         case INCREASE_ITEM:
             let incResults = state.cart.map(item => {
                 if (item._id === action.payload) {
@@ -394,7 +340,6 @@ const Todos = (state = initialState, action) => {
                 cart:incResults
             }
 
-        //Diminuer le nombre d'articles
         case DECREASE_ITEM:
             let decResults = state.cart.map(item => {
                 if (item._id === action.payload) {
@@ -402,13 +347,11 @@ const Todos = (state = initialState, action) => {
                 }
                 return item
             })
-            // let decResultsF
             return {
                 ...state,
                 cart:decResults
             }
 
-        // Total du panier
         case TOTAL_ITEMS:
 
         const totals = state.cart.reduce((prev, item) => {
@@ -420,14 +363,12 @@ const Todos = (state = initialState, action) => {
               total:totalsFixed
           }
 
-        // Details Page
         case DETAILS:
             return {
                 ...state,
             }
 
 
-        // eslint-disable-next-line no-fallthrough
         default:
              return state
     }

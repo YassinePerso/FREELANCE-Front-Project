@@ -6,10 +6,9 @@ import styles from "../Styles/ProductThe.module.css";
 const ProductThe = (props) => {
 
 
-  const { data, AddToCart, isInCart } = props;
+  const { data, AddToCart } = props;
 
   return (
-    // <main className="containerProductComponent-yetz">
       <div className={styles.productThe}>
 
         <div className={styles.productDetailsThe}>
@@ -33,20 +32,12 @@ const ProductThe = (props) => {
         <div className={styles.containerPrixProductThe}>
            <span className={styles.yThe}>{data.prix}0€</span>
         </div>
-        {/* <div className="box-img">
-                <Link to={`/subCategory/${data.url}}`}>
-                    <img src={data.img} alt="produit" />
-                </Link>
-            </div> */}
 
         <div className={styles.productbtnThe}>
           <button onClick={AddToCart}>Ajouter au panier</button>
         </div>
-        {/* <div className={isInCart ? "inCart newInCart" : "inCart"}>
-                <span>Déjà dans le Panier</span>
-            </div> */}
+       
       </div>
-    // </main>
   );
 };
 
