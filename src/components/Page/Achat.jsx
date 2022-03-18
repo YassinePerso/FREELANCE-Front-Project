@@ -125,7 +125,7 @@ const Achat = (props) => {
               </div>
 
               <section className="retourButtonAchat">
-                <Link to="/">
+                <Link to="/cart">
                   <button>
                     Retour
                   </button>

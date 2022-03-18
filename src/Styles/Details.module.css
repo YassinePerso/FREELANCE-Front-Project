@@ -30,7 +30,7 @@
     height: 100%;
     border: none;
     color: #000000;
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
 }
 .buttonGridDetails p {
     margin: auto;
@@ -48,7 +48,7 @@
 
 /* GRID PRODUCT */
 .detailsCenter {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;

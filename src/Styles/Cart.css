@@ -50,6 +50,7 @@
     background-color: rgb(138, 136, 139);
     height: 120vh;
     width: 100%;
+    /* overflow-x: hidden; */
 }
 .cart-center {
     display: flex;

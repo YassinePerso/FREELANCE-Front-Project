@@ -1,4 +1,5 @@
 .navbar {
+	border-bottom: 1px solid #000000;
 	height: 80px;
 	width: 100%;
     z-index: 1000;
@@ -9,6 +10,7 @@
 	align-items: center;
 	padding: 0 2rem;
 	font-size: 1.2rem;
+
 }
 
 /** SHOPPING CART **/
@@ -87,7 +89,7 @@
 	.nav-links {
 		display: flex;
 		flex-direction: column;
-		position: fixed;
+		position: absolute;
 		text-align:start;
 		width: 100%;
 		height: 100vh;
@@ -101,6 +103,8 @@
 		background-color: burlywood;
 		background: rgb(238, 238, 238);
 		left: 0;
+		overflow-y: hidden;
+	overflow-x: hidden;
 	}
 
 	.nav-link {

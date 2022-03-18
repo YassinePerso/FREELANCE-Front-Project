@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import '../Styles/Searchbox.css';
+import { getItems } from '../components/actions/itemActions';
+
 
 const Searchbox = (props) => {
 
@@ -34,4 +36,4 @@ const mapStateToProps = (state) => ({
     item:state.item
   })
 
-  export default connect(mapStateToProps) (Searchbox);
+  export default connect(mapStateToProps, {getItems}) (Searchbox);

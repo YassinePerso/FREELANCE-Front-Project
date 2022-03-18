@@ -11,7 +11,7 @@ const Links = (props) => {
     <section className={styles.containerLinks}>
       <div className={styles.links}>
         <Link to="/">
-            MENU
+            Menu
         </Link>{">"}
         <Link to={`/${props.page_category}`}>
             {props.page_category}
