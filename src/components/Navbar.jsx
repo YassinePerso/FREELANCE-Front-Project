@@ -38,12 +38,6 @@ const Navbar = (props) => {
           <Searchbox />
         </div>
 
-      <div className="navBarGridIconMenu">
-        <div onClick={handleClick} className="nav-icon">
-          {open ? <FiX /> : <FiMenu />}
-        </div>
-      </div>
-
       <div className="navBarGridIconCart">
         <Link to="/cart">
             <div className="shopping-cart">
@@ -51,6 +45,12 @@ const Navbar = (props) => {
               <span>{props.item.cart.length}</span>
             </div>
         </Link>
+      </div>
+
+      <div className="navBarGridIconMenu">
+        <div onClick={handleClick} className="nav-icon">
+          {open ? <FiX /> : <FiMenu />}
+        </div>
       </div>
 
         </section>

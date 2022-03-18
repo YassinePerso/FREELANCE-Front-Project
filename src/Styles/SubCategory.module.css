@@ -1,0 +1,21 @@
+
+
+.containerSubCategory {
+    /* background-color: yellow; */
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+    .containerSubCategory {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 90vh;
+        margin-bottom: 80px;
+    }
+}

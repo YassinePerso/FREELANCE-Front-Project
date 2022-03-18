@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { getItems, AddToCart, bannerClose} from '../actions/itemActions';
 import Product from '../Product';
 
+import styles from "../../Styles/SubCategory.module.css";
+
 const HuileAntiStress = (props) => {
 
     const {items} = props.item;
@@ -13,18 +15,18 @@ const HuileAntiStress = (props) => {
     }
 
     return (
-        <div className="products">
-            <Links page="Huile" id="Huile Anti-Stress"/>
+        <>
+            <Links page_category="Huile" title="Huile Anti-Stress"/>
 
             {/* <h2>AUTRE PRODUCT</h2> */}
 
-            <div className="inside-container">
+            <div className={styles.containerSubCategory}>
                 {/* <h3>Products</h3> */}
-                <div className="products-center">
+                {/* <div className="products-center"> */}
                     {items.filter((elt) => elt.page_category === "Huile" && elt.url === "HuileAntiStress").map((product) => <Product key={product._id} data={product} AddToCart={() => AddToCart(product._id)} isInCart={product.isInCart}/>)}
-                </div>
+                {/* </div> */}
             </div>
-        </div>
+        </>
     );
 };
 

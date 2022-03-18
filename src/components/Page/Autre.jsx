@@ -1,9 +1,10 @@
 import React from 'react';
-import '../../Styles/Products.css';
+// import '../../Styles/Products.css';
 import { connect } from 'react-redux';
 import { getItems, AddToCart, bannerClose} from '../actions/itemActions';
 import Product from '../Product';
 import Marquee from '../Marquee';
+import styles from "../../Styles/SubCategory.module.css";
 
 
 const Autre = (props) => {
@@ -25,16 +26,16 @@ const Autre = (props) => {
 
     
     return (
-        <div className="products">
+        <>
             <Marquee  name="Autre"/>
 
 
-            <div className="inside-container">
-                <div className="products-center">
+            <div className={styles.containerSubCategory}>
+                {/* <div className="products-center"> */}
                     {items.filter((elt) => elt.page_category === "Autre").map((product) => <Product key={product._id} data={product} AddToCart={() => AddToCart(product._id)} isInCart={product.isInCart}/>)}
-                </div>
+                {/* </div> */}
             </div>
-        </div>
+        </>
     );
 };
 
