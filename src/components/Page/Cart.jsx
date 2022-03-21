@@ -151,7 +151,6 @@ const Cart = (props) => {
                             </span>
                         </div>
                     </section>
-
                   </div>
                 {/*********************  MOBILE  **********************/}
 
