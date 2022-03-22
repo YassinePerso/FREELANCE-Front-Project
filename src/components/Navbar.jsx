@@ -26,7 +26,7 @@ const Navbar = (props) => {
 
         <div className="navBarGridLogo">
           <Link to="/" className="nav-logo">
-            Logo
+            LOGO
           </Link>
         </div>
 

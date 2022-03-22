@@ -6,13 +6,83 @@ import { getItems } from '../components/actions/itemActions';
 
 const Searchbox = (props) => {
 
-    const { search } = props.item;
+  const dataSearBar = [
+    {
+      _id: 1,
+      title: "Huile Calmante 1"
+  },
+  {
+      _id: 2,
+      title: "Huile Calmante 2"
+  },
+  {
+      _id: 3,
+      title: "Huile Calmante 3"
+  },
+  {
+      _id: 4, 
+      title: "Huile Relaxante 1"
+  },
+  {
+      _id: 5, 
+      title: "Huile Relaxante 2"
+  },
+  {
+      _id: 6, 
+      title: "Huile Relaxante 3"
+  },
+  {
+      _id: 7, 
+      title: "Huile Anti-Stress"
+  },
+  {
+      _id: 8, 
+      title: "Huile Anti-douleur 1"
+  },
+  {
+      _id: 9, 
+      title: "Huile Anti-douleur 2"
+  },
+  {
+      _id: 10, 
+      title: "Huile Anti-douleur 3"
+  },
+  {
+      _id: 11, 
+      title: "Infusion CBD Vitalité"
+  },
+  {
+      _id: 12, 
+      title: "Infusion CBD Digestion "
+  },
+  {
+      _id: 13, 
+      title: "Thé Anti-Stress"
+  },
+  {
+      _id: 14, 
+      title: "Gummies CBD 1"
+  },
+  {
+      _id: 15, 
+      title: "Gummies CBD 2"
+  },
+  {
+      _id: 16, 
+      title: "Bonbons colorés"
+  },
+  ]
 
-    // const [searchTerm, setSearchTerm] = useState("");
+
+  const [ countries, setCountries ] = useState([]);
+  const [ product, setProduct ] = useState([]);
+
+
 
   return (
     <div class="searchbox">
       <input type="text" class="searchbox__input" placeholder="Cherchez votre produit" 
+      onChange={(e) => searchProduct(e.target.value)}
       />
       <svg
         class="searchbox__icon"
