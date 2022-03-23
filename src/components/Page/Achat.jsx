@@ -17,7 +17,7 @@ const Achat = (props) => {
         <span>PANIER</span>
       </section>
 
-      <div className="inside-container-remake">
+      <div className="inside-container-remake-achat">
         <section className="containerThreeButtonsPageAchat">
           <button>CREER MON COMPTE</button>
           <button>CLIENT ENREGISTRE</button>
@@ -55,11 +55,16 @@ const Achat = (props) => {
                     </div>
 
                     <div className="price-achat">
-                      <h5>
+                      <h6>
                         Prix: <span className="boldSpan">{cart.prix}0€</span>
-                      </h5>
+                      </h6>
                     </div>
                   </div>
+
+
+
+
+                  
                   <div className="single-cart-achat-phone" key={cart._id}>
                     <div className="cart-img-achat-phone">
                       <img src={cart.img} alt="présentation" />
@@ -85,9 +90,9 @@ const Achat = (props) => {
                       </div>
 
                       <div className="price-achat-phone">
-                        <h4>
+                        <h6>
                           Prix: <span className="boldSpan">{cart.prix}0€</span>
-                        </h4>
+                        </h6>
                       </div>
                     </section>
                   </div>

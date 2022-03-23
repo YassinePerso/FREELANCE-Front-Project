@@ -17,7 +17,6 @@
     border: none;
     vertical-align: middle;
     transition: box-shadow 0.4s ease;
-    /* margin-left: auto; Strictly for positioning */
   }
   
   .menuTrigger:hover {

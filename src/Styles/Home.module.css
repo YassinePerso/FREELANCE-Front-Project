@@ -8,7 +8,6 @@
         grid-template-rows: 7fr 4fr;
     }
 
-    /** ANIMATION **/
     .containerHomeImg {
         overflow: hidden;
         background-color: grey;
@@ -50,7 +49,6 @@
         animation: reveal 2.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s backwards;
       }
 
-    /********** animation KEYFRAMES ************/
     @media screen and (max-width: 800px) {
         #divOnAnimations h1 {
             font-size: 45px;
@@ -71,7 +69,6 @@
           transform: translate(0,0);
         }
       }
-    /********** animation KEYFRAMES ************/
    
 
     .containerHomeText {
@@ -88,7 +85,6 @@
         align-items: center;
         padding: 10px 100px 10px 100px;
     }
-    /** DISPLAY : GRID **/
 .containerHomeButton {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;

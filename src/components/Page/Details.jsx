@@ -1,9 +1,7 @@
 
-///////////////    ------------------------------------------------------------------    /////////////////////
 
 import { Link, useParams } from "react-router-dom";
 import React from "react";
-// import { Data } from './Data';
 import { connect } from "react-redux";
 import { getItems, AddToCart } from "../../components/actions/itemActions";
 

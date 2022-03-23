@@ -8,8 +8,8 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     font-size: clamp(10px, 9vw, 50px);
-    font-weight: bold;
 }
+
 
 
 .cart-achat h3 {
@@ -21,55 +21,35 @@
 }
 
 .cart-achat {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: yellow;
 }
 
-/* .cart-center-achat {
-    display: block;
-    height: 100%;
-    background-color: rgb(93, 226, 208);
-} */
-
-.inside-container-remake {
-    height: 100%;
-}
 
 .cart-info-achat {
     text-align: center;
-    /* background-color: #e93e3e; */
     margin-top: 20px;
     height: 100%;
-    /* margin-bottom: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-/* .achat-title-achat {
-    background-color: rgb(205, 50, 192) ;
-} */
-
 
 .single-cart-achat {
-    /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
     border: 1px solid rgb(0, 0, 0);
-    /* border-radius: 20px; */
     margin: 10px 5px;
     margin-top: 10px;
     align-items: center;
     padding: 5px 5px;
-    /* background-color: rgb(51, 46, 46); */
 }
 
 
 .fontChange-yzx-achat {
     color: #000000;
-    /* background-color: aqua; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -81,7 +61,6 @@
 }
 
 .counting-achat {
-    /* background-color: darkkhaki; */
     width: 100%;
     height:100%;
     display: flex;
@@ -92,11 +71,9 @@
 .counting-achat button {
     width: 25px;
     border: none;
-    /* background-color: burlywood; */
 }
 
 .price-achat {
-    /* background-color: coral; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -105,22 +82,18 @@
 }
 
 
-/****  Display Grid Single Cart  ****/
 .single-cart-achat {
     width: 80%;
     margin: 10px 5px;
     margin-top: 0;
     align-items: center;
     padding: 5px 5px;
-    /* background-color: springgreen; */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns:
         1.8fr 6fr 6fr 2.2fr 3.5fr
     ;
     justify-self: center;
-    /* margin: 0;
-    padding: 0; */
 }
 
 .cart-img-achat {
@@ -130,7 +103,6 @@
     margin: 0;
     width: 100%;
     height: 100%;
-    /* background-color: #000000; */
     overflow: hidden;
 }
 .single-cart-achat img {
@@ -140,16 +112,13 @@
 }
 
 .boldSpan {
-    font-weight: bold;
     text-transform: capitalize;
 }
 
-/* button Modifier */
 .buttonModifierAchatPage {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    /* background-color: grey; */
     height: 100%;
     display: flex;
     justify-content: center;
@@ -165,9 +134,7 @@
     -moz-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
 }
 
-/**** SECTION BUTTON ****/
 .containerThreeButtonsPageAchat {
-    /* background: yellow; */
     height: 55vh;
     display: flex;
     flex-direction: column;
@@ -175,7 +142,6 @@
     align-items: center;
 }
 .containerThreeButtonsPageAchat button {
-    font-weight: bold;
     width: 300px;
     border: none;
     padding: 5px 15px 5px 15px;
@@ -185,26 +151,19 @@
 	-webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
 	-moz-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
 }
-/**** SECTION BUTTON end ****/
 
 .single-cart-achat-phone {
     display: none;
 }
 
-/* .inside-container-remake {
-    background-color: blueviolet;
-} */
 
 .retourButtonAchat {
-    /* background-color: black; */
     height: 40vh;
     padding-left: 130px;
-    /* padding-left: 50px; */
     padding-top: 90px;
 }
 .retourButtonAchat button {
     
-    font-weight: bold;
     background-color: #f4d0d0;
     border-radius: 20px;
     padding: 5px 30px;
@@ -215,7 +174,7 @@
 }
 
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 800px) {
     .single-cart-achat {
         display: none;
     }
@@ -224,17 +183,13 @@
     }
     .cart-info-achat {
         text-align: center;
-        /* background-color: #de63e2; */
         margin-top: 20px;
         margin-bottom: 50px;
-        /* padding: 10px 0 10px 0; */
         padding-bottom: 30px;
     }
     .single-cart-achat-phone {
         width: 100%;
-        /* background-color: aqua; */
         display: flex;
-       
         align-items: center;
         display: grid;
         grid-template-rows: 1fr;
@@ -244,19 +199,16 @@
         border: 1px solid #000000;
     }
 
-    /***** Image Part *****/
     .cart-img-achat-phone {
         overflow: hidden;
-        /* background-color: yellow; */
+        height: 30vh;
     }
     .cart-img-achat-phone img {
         width: 100%;
         height: 100%;
     }
 
-    /****** Info Part *******/
     .gridPhoneMobileFirst {
-        /* background-color: rgb(131, 126, 202); */
         height: 100%;
         width: 100%;
         display: grid;
@@ -264,23 +216,18 @@
         grid-template-rows: .3fr .5fr .5fr .5fr;
     }
 
-    /* title */
     .achat-title-achat-phone {
         border-bottom: 1px solid #000000;
         display: flex;
-        /* background-color: aqua; */
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .achat-title-achat-phone h4{
         font-size: 15px;
-        /* background-color: aliceblue; */
     }
 
-    /* Taux de CBD */
     .fontChange-yzx-achat-phone {
-        /* background-color: burlywood; */
         margin-top: 20px;
         text-align: start;
         padding-left: 5px;
@@ -288,25 +235,19 @@
         align-self: flex-end;
     }
 
-    /* Quantité */
     .counting-achat-phone {
-        /* background-color: chartreuse; */
         text-align: start;
         margin-top: 20px;
         padding-left: 5px;
     }
 
-    /* Prix */
     .price-achat-phone {
-        /* background-color: darkgray; */
         text-align: start;
         padding-left: 5px;
         margin-top: 20px;
     }
 
-    /* button Modifier */
     .buttonModifierAchatPage {
-        /* background-color: darkorange; */
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -323,14 +264,11 @@
 	-moz-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
     }
     .retourButtonAchat {
-        /* background-color: black; */
         height: 30vh;
         padding-left: 40px;
         padding-top: 0px;
     }
     .retourButtonAchat button {
-        
-        font-weight: bold;
         background-color: #f4d0d0;
         border-radius: 20px;
         padding: 5px 30px;

@@ -15,7 +15,6 @@
 }
 .containerButtonContinuerDeShopper button {
     font-size: clamp(10px, 4.5vw, 35px);
-    /* font-weight: bold; */
     width: 100%;
     height: 100%;
     border: none;
@@ -29,7 +28,6 @@
 }
 .containerButtonCommander button {
     font-size: clamp(10px, 5vw, 35px);
-    /* font-weight: bold; */
     width: 100%;
     height: 100%;
     border: none;
@@ -37,12 +35,6 @@
 }
 
 
-
-/**************************************  CART  *****************************************/
-
-.inside-container-remake {
-    height: 100vh;
-}
 
 .cart h3 {
     text-align: center;
@@ -53,39 +45,29 @@
 }
 
 .cart {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: yellow;
 }
 
-.inside-container-remake {
-    height: 100%;
-    background-color: aqua;
-}
 .cart-center {
-    /* display: flex; */
     display: grid;
     grid-template-columns: 10fr 1fr;
     grid-template-rows: 1fr;
-    height: 100vh;
-    /* background-color: red; */
+    display: flex;
+    justify-content: center;
 }
 .cart-info {
-    height: 100%;
     text-align: center;
-    padding: 10px;
-    background-color: rgb(116, 107, 241);
-    width: 95%;
+    padding: 50px 5px;
+    height: 100%;
+    width: 90%;
 }
 .single-cart {
     display: flex;
     justify-content: space-between;
     border: 1px solid #000000;
-    margin: 10px 5px;
-    /* margin-top: 0; */
-    /* margin-bottom: 5px; */
     align-items: center;
-    background-color: rgb(202, 64, 64);
+    height: 20vh;
 }
 .sameItem {
     width: 100%;
@@ -93,14 +75,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: yellow; */
-    /* flex: 0 0 30%; */
     color: #000000;
     letter-spacing: 0.1rem;
 }
 .fontChange-yzx {
     color: #000000;
-    /* background-color: aqua; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -114,11 +93,10 @@
 }
 .single-cart {
     width: 100%;
-    background-color: springgreen;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns:
-        1fr 3fr 1fr 1fr 1fr .8fr 1fr 1fr
+        1fr 2.7fr .7fr 1fr 1fr .8fr 1fr 1fr
     ;
     justify-self: center;
     padding: 0;
@@ -131,7 +109,6 @@
     margin: 0;
     width: 100%;
     height: 100%;
-    /* background-color: #000000; */
     overflow: hidden;
 }
 .single-cart img {
@@ -140,7 +117,6 @@
     border-radius: 10px;
 }
 .counting {
-    /* background-color: darkkhaki; */
     width: 100%;
     height:100%;
     display: flex;
@@ -150,10 +126,8 @@
 .counting button {
     width: 25px;
     border: none;
-    /* background-color: burlywood; */
 }
 .price {
-    /* background-color: coral; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -161,10 +135,6 @@
     align-items: center;
 }
 
-
-.delete-item {
-    /* background-color: cadetblue; */
-}
 .delete-item .fa-trash {
     color: black;
     cursor: pointer;
@@ -173,14 +143,13 @@
 
 
 
-/**********  CART Result  ***********/
 .cart-results {
     border: 1px solid #000000;
     width: 280px;
     height: 180px;
     margin-top: 10px;
     margin-right: 10px;
-    /* background-color: #df9494; */
+    margin-left: 53rem;
 }
 .cart-results h3 {
     text-align: center;
@@ -188,7 +157,6 @@
     color: rgb(48, 47, 47);
     font-size: 22px;
     font-style: normal;
-    /* font-weight: 400; */
 }
 .cart-results h4 {
     margin: 5px;
@@ -202,7 +170,6 @@
 .cart-results h4 span {
     color: rgb(0, 0, 0);
     font-size: 20px;
-    /* font-weight: 600; */
 }
 
 .single-cart-mobile {
@@ -213,14 +180,11 @@
     .cart-center {
         display: block;
     }
-    /* .cart-info {
-        flex: 1;
-    } */
+    
     .cart-results {
         width: 300px;
         margin-left: 65%;
         align-self: flex-start;
-        /* background-color: aqua; */
     }
     .cart-results h3 {
         margin-top: 10px;
@@ -231,11 +195,9 @@
 @media screen and (max-width:850px) {
     
     .cart {
-        /* background-color:rgb(165, 155, 16); */
-        height: 160vh;
+        height: 100%;
     }
 
-    /*** General Grid ***/
     .containerButtonCart-jz-ts {
         width: 100%;
         height: 14vh;
@@ -247,12 +209,8 @@
     }
     .cart-info {
         padding: 0;
-        /* background-color: #000000; */
         width: 100%;
         height: 100%;
-    }
-    .cart-center {
-        height: 20%;
     }
     
     .single-cart {
@@ -262,22 +220,17 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        height: 180vh;
     }
 
     .single-cart-mobile {
-        /* background-color: orange; */
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        width: 100%;
     }
 
 
-
-
-    /*** First GRID Image Part ***/
     .gridCartMobileImg {
-        /* overflow: hidden; */
         height: 100%;
         width: 100%;
     }
@@ -287,9 +240,7 @@
     }
 
 
-    /*** Second GRID Infos Part ***/
     .gridCartMobileInfos {
-        /* background-color: aqua; */
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: .4fr .2fr .2fr .1fr .9fr;
@@ -298,7 +249,6 @@
         font-size: 15px;
     }
     .fontChange-yzx-mobile {
-        /* background-color: yellow; */
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -308,14 +258,13 @@
         font-size: 15px;
     }
     .counting-mobile {
-        /* background-color: orange; */
         display: flex;
     }
     .counting-mobile button {
         font-weight: bold;
         width: 20px;
+        background-color: #ffffff;
         border: none;
-        /* background-color: burlywood; */
     }
     .price-mobile {
         display: flex;
@@ -325,23 +274,17 @@
     .delete-item-mobile {
         text-align: end;
         padding-right: 5px;
-        /* padding-bottom: 5px; */
         margin-bottom: 5px;
     }
-
-
-
-
-
-
-
-    /*** Cart Result ***/
     .cart-results {
         width: 280px;
         height: 150px;
         margin-left: 1rem;
         margin-top: 3rem;
         border: 1px solid #333;
-        /* background-color: rgb(165, 155, 16); */
+    }
+    .counting button {
+        width: 25px;
+        border: none;
     }
 }
