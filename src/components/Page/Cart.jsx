@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Data } from './Data'
 import trash from '../../images/delete.png';
 import '../../Styles/Cart.css';
 import { connect } from 'react-redux';
@@ -39,7 +38,9 @@ const Cart = (props) => {
           <div className='inside-container-remake'>
           {cart.length === 0 ?
             <>
+            <div style={{height:"100vh"}}>
             <h3>Votre panier est vide.</h3>
+            </div>
             </>
             :
             <>
@@ -56,7 +57,6 @@ const Cart = (props) => {
                       <h4>{cart.title}</h4>
                     </div>
 
-                    {/* TAUX  */}
                     <div className="fontChange-yzx">
                       <p>{cart.taux}</p>
                     </div>
@@ -94,7 +94,6 @@ const Cart = (props) => {
 
                   
 
-                  {/************************* MOBILE  ************************/}
                   <div className="single-cart-mobile" key={cart._id}>
 
 
@@ -130,15 +129,10 @@ const Cart = (props) => {
                           <h4>{cart.prix}0€</h4>
                         </div>
 
-                        {/* TAUX  */}
                         <div className="fontChange-yzx-mobile">
                           <p>{cart.taux}</p>
                         </div>
 
-
-                        {/* <div className="fontChange-yzx-mobile">
-                          <p>{cart.gout}</p>
-                        </div> */}
 
 
 
@@ -151,8 +145,8 @@ const Cart = (props) => {
                             </span>
                         </div>
                     </section>
+                    
                   </div>
-                {/*********************  MOBILE  **********************/}
 
 
 
@@ -163,7 +157,6 @@ const Cart = (props) => {
               <div className="cart-results">
                 <h3>Total :</h3>
                 <h4>Frais de livraison:<span>Gratuit</span></h4>
-                {/* <h4>Prix: <span>WIP</span></h4> */}
                 <h4>Prix total: <span> {props.item.total}€</span></h4>
               </div>
             </section>

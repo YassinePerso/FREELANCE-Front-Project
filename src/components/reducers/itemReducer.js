@@ -277,7 +277,6 @@ export const initialState = {
     cart: [],
     isOpen: false,
     total: 0,
-    shipping: 10
 };
 
 

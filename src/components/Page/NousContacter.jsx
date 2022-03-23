@@ -34,15 +34,12 @@ const NousContacter = () => {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          {/* <Modal.Title>Modal heading</Modal.Title> */}
         </Modal.Header>
         <Modal.Body>Votre message a bien été envoyé</Modal.Body>
         <Modal.Body>Nous vous remercions </Modal.Body>
         <Modal.Body>A bientôt !</Modal.Body>
         <Modal.Footer>
-          {/* <Button onClick={handleClose}>
-           X
-          </Button> */}
+          
         </Modal.Footer>
       </Modal>
         </form>

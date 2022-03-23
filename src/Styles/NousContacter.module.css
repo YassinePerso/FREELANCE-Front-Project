@@ -1,5 +1,4 @@
 .wrapperNousContacter {
-    /* background-color: grey; */
     height: 81vh;
     display: flex;
     justify-content: center;
@@ -7,7 +6,6 @@
 }
 
 #contactForm {
-    /* background-color: rgb(54, 182, 182); */
     border: 2px solid #333;
     width: 25%;
     height: 73%;
@@ -18,7 +16,6 @@
 }
 
 .formGroup {
-    /* background-color: rebeccapurple; */
     width: 100%;
     height: 20%;
     display: flex;
@@ -27,13 +24,11 @@
 }
 
 .formControl {
-    /* background-color: yellow; */
     width: 50%;
     height: 30%;
     border: 1px solid #333;
 }
 .formControlMessage {
-    /* background-color: grey; */
     width: 50%;
     height: 80%;
 }

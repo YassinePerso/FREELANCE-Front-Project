@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../../Styles/Products.css';
 import { connect } from 'react-redux';
 import { getItems, AddToCart} from '../actions/itemActions';
 import ProductThe from '../ProductThe';
