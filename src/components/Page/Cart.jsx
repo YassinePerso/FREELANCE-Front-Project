@@ -48,6 +48,7 @@ const Cart = (props) => {
               <div className="cart-info">
                 {cart.map(cart => (
                   <>
+                  <div className='resecage'>
                   <div className="single-cart" key={cart._id}>
                     <div className="cart-img">
                       <img src={cart.img} alt="présentation" />
@@ -89,6 +90,7 @@ const Cart = (props) => {
                           props.getTotals();
                       }} />
                     </div>
+                  </div>
                   </div>
 
 
@@ -160,7 +162,21 @@ const Cart = (props) => {
                 <h4>Prix total: <span> {props.item.total}€</span></h4>
               </div>
             </section>
+
+            <section className="sectionMethodeDePaiement">
+              <span>
+                 METHODES DE PAYEMENT
+              </span>
+            </section>
+
+            <section className="sectionRetour">
+              <button>
+                 Retour
+              </button>
+            </section>
+
               </div>
+
 
 
             </div>
