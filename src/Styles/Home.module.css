@@ -37,14 +37,17 @@
         overflow: hidden;
     }
     #divOnAnimations .h1One .spanOne {
+        font-weight: 200;
         display: block;
         animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s backwards;
       }
     #divOnAnimations .h1Two .spanTwo {
+        font-weight: 200;
         display: block;
         animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.5s backwards;
       }
     #divOnAnimations .h1Three .spanThree {
+        font-weight: 200;
         display: block;
         animation: reveal 2.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s backwards;
       }
