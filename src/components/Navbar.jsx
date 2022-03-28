@@ -19,6 +19,45 @@ const Navbar = (props) => {
 		setOpen(false);
 	};
 
+	const dataSearchBar = [
+		 "Huile Calmante 1",
+		 "Huile Calmante 2",
+		 "Huile Calmante 3",
+		 "Huile Relaxante 1",
+		 "Huile Relaxante 2",
+		 "Huile Relaxante 3",
+		 "Huile Anti-Stress",
+		 "Huile Anti-douleur 1",
+		 "Huile Anti-douleur 2",
+		 "Huile Anti-douleur 3",
+		 "Infusion CBD Vitalité",
+		 "Infusion CBD Digestion ",
+		 "Thé Anti-Stress",
+		 "Gummies CBD 1",
+		 "Gummies CBD 2",
+		 "Bonbons colorés"
+	  ]
+
+	const urlSearchBar = [
+		 1,
+		 2,
+		 3,
+		 4,
+		 5,
+		 6,
+		 7,
+		 8,
+		 9,
+		 10,
+		 11,
+		 12,
+		 13,
+		 14,
+		 15,
+		 16
+	  ]
+
+
 
   return (
     <nav className="navbar">
@@ -31,7 +70,7 @@ const Navbar = (props) => {
         </div>
 
         <div className="navBarGridSearchBar">
-          <Searchbox />
+          <Searchbox lang={dataSearchBar} url={urlSearchBar}/>
         </div>
 
       <div className="navBarGridIconCart">
