@@ -7,21 +7,21 @@
     margin-right: 5%;
     overflow: hidden;
   }
- .searchbox .searchbox__input {
+ .searchbox .searchboxInput {
     display: block;
     appearance: none;
     width: 100%;
     border: none;
     outline: none;
     border-radius: 50px;
-    background-color: #000000;
     padding: 5px;
     color: #24233A;
+    background-color: #000000;
     font-size: 20px;
     cursor: pointer;
     transition: 0.4s linear;
   }
- .searchbox .searchbox__input::placeholder {
+ .searchbox .searchboxInput::placeholder {
     color: #24233A;
   }
  .searchbox .searchbox__icon {
@@ -40,7 +40,7 @@
  .searchbox:focus-within {
     max-width: 300px;
   }
-.searchbox:focus-within .searchbox__input {
+.searchbox:focus-within .searchboxInput {
     background-color: #FFF;
     padding-right: 50px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
@@ -83,4 +83,62 @@
       height: 20px;
       pointer-events: none;
     }
+    .dropdown {
+      background-color: rgba(60, 132, 190, 0.322);
+      display: flex;
+      flex-direction: column;
+      border: 1px solid gray;
+    }
+    
+    .dropdown:empty {
+      border: none;
+    }
+    
+    .dropdownRow {
+      cursor: pointer;
+      text-align: start;
+      margin: 2px 0;
+      position: absolute;
+    }
+    
+    input {
+      width: 220px;
+    }
+    
+    .searchInner {
+      display: flex;
+    }
+  }
+
+
+
+  .searchboxIcon {
+    width: 10px;
+    height: 10px;
+  } 
+  
+  .dropdown {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+  }
+  
+  .dropdown:empty {
+    border: none;
+  }
+  
+  .dropdownRow {
+    height: 10%;
+    cursor: pointer;
+    text-align: start;
+    margin: 2px 0;
+  }
+  
+  input {
+    width: 220px;
+  }
+  
+  .searchInner {
+    display: flex;
   }
