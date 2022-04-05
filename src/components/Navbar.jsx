@@ -20,6 +20,7 @@ const Navbar = (props) => {
 	};
 
 
+
   return (
     <nav className="navbar">
       <section className="gridNavBar">
