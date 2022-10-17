@@ -1,212 +1,142 @@
 .navbar {
-    background: rgb(122, 122, 122);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+	border-bottom: 1px solid #000000;
+	height: 80px;
+	width: 100%;
+    z-index: 1000;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.2rem;
+
 }
 
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: rgb(122, 122, 122);
+.shopping-cart > span {
+	background-color: rgb(136, 136, 136);
+	border-radius: 100%;
+	padding: 2px 7px 2px 7px;
+	color: white;
 }
 
-nav .logoBtn {
-    display: flex;
-    justify-content: space-between;
-    background: rgb(122, 122, 122);
-    padding: 10px;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-}
-
-nav .logoBtn a {
-    opacity: 1;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-nav .logoBtn a:hover {
-    opacity: 0.9;
-}
-
-nav .logoBtn a img {
-    width: 45px;
-    margin-right: 5px;
-}
-
-nav .logoBtn a p {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    font-style: oblique; 
-}
-/* nav .logoBtn a p span {
-    font-size: 30px;
-    color: red;
-} */
-
-nav .logoBtn .hamburger {
-    border: 1px solid white;
-    display: inline-block;
-    cursor: pointer;
-}
-
-nav .logoBtn .hamburger .bar {
-    background-color: lightgray;
-    padding: 1px;
-    width: 35px;
-    height: 3px;
-    margin: 4px;
-}
-
-.links li a {
-    font-size: 18px;
-    color: white;
-    padding: 10px;
-    display: block;
-    transition: all 0.5s ease-in-out;
-    margin: 2px 0;
-}
-
-.links li a:hover {
-    color: lightgray;
-    padding: 10px 20px;
-}
-
-.shopping-icon {
-    display: none;
-}
-
-.mobile-shopping {
-    display: block;
-    display: flex;
-    align-self: center;
-    margin-top: 5px;
-    position: relative;
-}
-
-.mobile-shopping span {
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: -11px;
-    left: 9px;
-    background-color: red;
-    width: 20px;
-    border-radius: 50px;
-    text-align: center;
-}
-/*****/
-.shopping-icon span {
-    display: none;
-}
-.mobile-shopping {
-    display: none;
-}
-/****/
-
-/* .links-navigation {
-    background-color: teal;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    transform: translateX(-100%);
+.gridNavBar {
+    display: grid;
+    grid-template-columns: 4.8fr 2.2fr .5fr 1fr;
+    grid-template-rows: 1fr;
     width: 100%;
-    transition: all 0.5s ease-in-out;
-} */
-
-.new-links-navigation {
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    transform: translateX(0%);
+    align-items: center;
+}
+.navBarGridLogo {
     width: 100%;
-    transition: all 0.5s ease-in-out;
-} 
-
-.nav-btn {
-    margin: 10px 20px;
-    position: relative;
-    text-align: right;
-    font-size: 30px;
-    color: white;
+}
+.navBarGridLogo a {
+	color: hsl(0, 0%, 0%);
+}
+.navBarGridSearchBar {
+    width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.navBarGridIconMenu {
+    width: 100%;
+}
+.navBarGridIconCart {
+    width: 100%;
+}
+.nav-logo {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-size: clamp(10px, 5vw, 30px);
+	margin-left: 5%;
 }
 
-.nav-btn span {
-    cursor: pointer;
-    display: none;
+.nav-links {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 20px;
+	list-style: none;
 }
 
-/* .shopping-cart {
-    display: none;
-} */
+.nav-link {
+	text-decoration: none;
+	color: white;
+	transition: 0.3s all;
+}
 
-/* responsive ------------------------*/
-@media screen and (min-width: 664px) {
-    nav .logoBtn .hamburger {
-        display: none;
-    }
-    nav .logoBtn {
-        border-bottom: none;
-        padding: 0;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px 20px;
-    }
-    .links {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-    }
-    .links-nav {
-        display: flex;
-    }
-    .links-nav li a {
-        padding: 10px;
-        margin-right: 2px;
-        margin-left: 2px;
-    }
-    .links-nav li a:hover {
-        color: lightgray;
-        padding: 10px;
-    }
-    .shopping-icon {
-        color: white;
-        cursor: pointer;
-        position: relative;
-        display: flex;
-        font-size: 18px;
-    }
-    .shopping-icon span {
-        color: white;
-        position: absolute;
-        top: -11px;
-        left: 9px;
-        background-color: red;
-        width: 20px;
-        border-radius: 50%;
-        text-align: center;
-    }
-    .mobile-shopping {
-        display: none;
-    }
-    .links-navigation {
-        position: relative;
-        bottom: auto;
-        top: auto;
-        width: auto;
-        transform: translateX(0%);
-    }
-    .new-links-navigation {
-        background-color: teal;
-        position: relative;
-        bottom: auto;
-        top: auto;
-        width: auto;
-        transition: all 0.5s ease-in-out;
-    }
+.nav-link:hover {
+	color: rgb(0, 0, 0);
+}
+
+.nav-icon {
+	display: none;
+	font-size: 2rem;
+	cursor: pointer;
+	color: #333;
+}
+
+@media only screen and (max-width: 2000px) {
+	.navbar {
+		position:relative;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		text-align:start;
+		width: 100%;
+		height: 100vh;
+		top: 80px;
+		left: -100%;
+		transition: 0.5s all;
+		font-size: 25px;
+	}
+
+	.nav-links.active {
+		background-color: burlywood;
+		background: rgb(238, 238, 238);
+		left: 0;
+		overflow-y: hidden;
+	overflow-x: hidden;
+	}
+
+	.nav-link {
+		color: #333;
+	}
+
+	.nav-item {
+		padding: 10px 0;
+		width: 100%;
+		border-bottom: 1px solid rgb(0, 0, 0);
+	}
+
+	.nav-icon {
+		display: flex;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.gridNavBar {
+		display: grid;
+		grid-template-columns: 2fr 6fr 1.8fr 1fr;
+		grid-template-rows: 1fr;
+		width: 100%;
+		align-items: center;
+	}
+	.navBarGridIconCart {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.navBarGridSearchBar {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.navBarGridLogo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
 }

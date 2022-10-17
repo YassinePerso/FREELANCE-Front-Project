@@ -2,9 +2,6 @@ import {
     GET_ITEMS,
     ADD_ITEMS,
     DELETE_ITEM,
-    TOGGLE_NAV,
-    CLOSE_NAVBAR,
-    BANNER_CLOSE,
     INCREASE_ITEM,
     DECREASE_ITEM,
     TOTAL_ITEMS,
@@ -12,118 +9,294 @@ import {
 } from '../actions/types';
 
 
-const initialState = {
+export const initialState = {
     items:[
-        {
-            _id: 1,
-            img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
-            title: "Weed Seed 1",
-            price: "100",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
-            count: 1,
-            isInCart: false
-        },
-        {
-            _id: 2,
-            img: "https://ct112013.files.wordpress.com/2013/07/pasteeel.jpg",
-            title: "Weed Seed 2",
-            price: "40",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
-            count: 1,
-            isInCart: false
-        },
-        {
-            _id: 3,
-            img: "https://i.pinimg.com/736x/1a/e9/ff/1ae9ff68eddb75113cc797f1324515b9--color-coordination-reiss.jpg",
-            title: "Weed Seed 3",
-            price: "47",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
-            count: 1,
-            isInCart: false
-        },
-        {
-            _id: 4,
-            img: "http://www.todaysparent.com/wp-content/uploads/2014/02/Mint1.jpg",
-            title: "Weed Seed 4",
-            price: "98",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
-            count: 1,
-            isInCart: false
-        },
-        {
-            _id: 5,
-            img: "https://i.pinimg.com/originals/de/3a/64/de3a6465fd0b23253218d265b01da16e.jpg",
-            title: "Weed Seed 5",
-            price: "14",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
-            count: 1,
-            isInCart: false
-        },
-        {
-            _id: 6,
-            img: "https://www.clashmusic.com/sites/default/files/field/image/CLASH104_%20InternalImage62.jpg",
-            title: "Weed Seed 6",
-            price: "438",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
-            count: 1,
-            isInCart: false
-        },
-        {
-            _id: 7,
-            img: "http://www.umusic.ca/wp-content/uploads/2017/07/Kendrick-Lamar-Interview-Magazine-Photo-7.jpg",
-            title: "Weed Seed 7",
-            price: "865",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
-            count: 1,
-            isInCart: false
-        },
-        {
-            _id: 8,
-            img: "http://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/g/gca1qade12xtvxq.jpg",
-            title: "Weed Seed 8",
-            price: "865",
-            details: "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les",
-            count: 1,
-            isInCart: false
-        }
+  {
+    _id: 1,
+    url: "XXXXXXXXXXXXXXXXXX",
+    page_position: "first",
+    page_category: "XXXXXXX",
+    title: "XXXXXXXXXXXXXXX",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "X%",
+    composition: "XXXXXXXXXX",
+    contenance: "Xml",
+    gout: "XXXXXX",
+    prix: XX.XX,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 2,
+    url: "XXXXXXXXXXXXXXX",
+    page_category: "Huile",
+    title: "XXXXXXXXXXXXXXXXX",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "X%",
+    composition: "XXXXXXXXXXXXXXX",
+    contenance: "Xml",
+    gout: "XXXXXXX",
+    prix: XX.XX,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 3,
+    url: "XXXXXXXXXXXXX",
+    page_category: "XXXXXXX",
+    subCategory: "XXXXXXXXXXXXXXX",
+    title: "XXXXXXXXXXXXXXXX",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "15%",
+    composition: "XXXXXXXXXXXXXXXXXX",
+    contenance: "Xml",
+    gout: "XXXXXXXXX",
+    prix: XX.XX,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 4, 
+    url: "XXXXXXXXXXXXXX",
+    page_position: "first",
+    page_category: "XXXXXXXXX",
+    title: "XXXXXXXXXXXXXXXX",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "X%",
+    composition: "XXXXXXXXXXXXXXXXXXXXX",
+    contenance: "Xml",
+    gout: "XXXXXXXXXX",
+    prix: XX.XX,
+    Provenance: "Europe",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 5, 
+    url: "XXXXXXXXXXXXXXXXX",
+    page_category: "XXXXXXXX",
+    title: "XXXXXXXXXXXXX",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "X%",
+    composition: "XXXXXXXXXXXXXXXXXXXXXXX",
+    contenance: "XXml",
+    gout: "XXXXXXXX",
+    prix: XX.XX,
+    Provenance: "Europe",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 6, 
+    url: "XXXXXXXXXXXXXXXXXXXX",
+    page_category: "XXXXXXX",
+    title: "XXXXXXXXXXXXXXXXXX",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "XXX%",
+    composition: "XXXXXXXXXXXXXXXXXX",
+    contenance: "XXml",
+    gout: "XXXXXXX",
+    prix: XX.XX,
+    Provenance: "Europe",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 7, 
+    url: "HuileAntiStress",
+    page_position: "first",
+    page_category: "Huile",
+    title: "Huile Anti-Stress",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "10%",
+    composition: "Base MCT et CBD seul",
+    contenance: "10ml",
+    gout: "Neutre",
+    prix: 49.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 8, 
+    url: "HuileAntiDouleur",
+    page_position: "first",
+    page_category: "Huile",
+    title: "Huile Anti-douleur 1",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "10%",
+    composition: "Base MCT, CBD + CBG",
+    contenance: "10ml",
+    gout: "Citron Vert",
+    prix: 59.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 9, 
+    url: "HuileAntiDouleur",
+    page_category: "Huile",
+    title: "Huile Anti-douleur 2",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "10%",
+    composition: "Base MCT, CBD + CBG",
+    contenance: "20ml",
+    gout: "Fraise",
+    prix: 59.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 10, 
+    url: "HuileAntiDouleur",
+    page_category: "Huile",
+    title: "Huile Anti-douleur 3",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "10%",
+    composition: "Base MCT, CBD + CBG",
+    contenance: "20ml",
+    gout: "Neutre",
+    prix: 59.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 11, 
+    url: "urlThé",
+    page_position: "first",
+    page_category: "The",
+    title: "Infusion CBD Vitalité",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "10% de fleurs ",
+    composition: "Neutre",
+    gout: "Neutre",
+    prix: 14.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 12, 
+    url: "urlThé",
+    page_position: "first",
+    page_category: "The",
+    title: "Infusion CBD Digestion ",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "10% de fleurs ",
+    composition: "Mélisse, Verveine",
+    gout: "Mélisse, Verveine",
+    prix: 14.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 13, 
+    url: "urlThé",
+    page_position: "first",
+    page_category: "The",
+    title: "Thé Anti-Stress",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "5% de fleurs ",
+    composition: "Thé vert, Menthe, Citron",
+    gout: "Menthe, Citron",
+    prix: 13.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 14, 
+    subPage: "SubAutre",
+    page_position: "first",
+    page_category: "Autre",
+    title: "Gummies CBD 1",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "<2%",
+    composition: "Vegan Mixed Fruits",
+    contenance: "60 gummies",
+    gout: "Mixed Fruits",
+    prix: 34.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 15, 
+    page_category: "Autre",
+    title: "Gummies CBD 2",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "<2%",
+    composition: "Vegan Strawberry",
+    contenance: "60 gummies",
+    gout: "Strawberry",
+    prix: 34.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
+{
+    _id: 16, 
+    subPage: "SubAutre",
+    page_position: "first",
+    page_category: "Autre",
+    title: "Bonbons colorés",
+    img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
+    taux: "2.50%",
+    composition: "Vegan",
+    contenance: "30 gummies",
+    gout: "Neutre",
+    prix: 29.90,
+    Provenance: "France",
+    description: "description description description",
+    utilisation: "utilisation utilisation utilisation",
+    count: 1,
+},
     ],
     cart: [],
     isOpen: false,
     total: 0,
-    shipping: 10
 };
+
+
 
 const Todos = (state = initialState, action) => {
 
     switch(action.type) {
 
-        // Récupérer le state initial
+
         case GET_ITEMS:
              return {
                  ...state
              }
-             // TOGGLE navigation APPARITION
-        case TOGGLE_NAV:
-             return {
-                 ...state,
-                 isOpen:!state.isOpen
-             }
-             //close navbar
-        case CLOSE_NAVBAR:
-            if (state.isOpen === true) {
-                return {
-                    ...state,
-                    isOpen:false
-                }
-            }
-            //Add To Cart functionnality
+
         // eslint-disable-next-line no-fallthrough
         case ADD_ITEMS:
-            
+
         let check = state.cart.find(item => item._id === action.payload);
 
         if (!check) {
-            // bringing only the items that match the id 
             let items = state.items.filter(item => item._id === action.payload)
             let itemsCart = [...state.cart, ...items]
 
@@ -137,7 +310,6 @@ const Todos = (state = initialState, action) => {
             let items = state.items.filter(item => item._id === action.payload);
             items.forEach(item => {
                 item.isInCart = true
-                // alert('Deja dans le panier')
             })
 
             return {
@@ -145,17 +317,7 @@ const Todos = (state = initialState, action) => {
             }
         }
 
-        //Close the banner 
-        case BANNER_CLOSE:
-            state.items.forEach(item => {
-                item.isInCart = false
-            })
 
-            return {
-                ...state
-            }
-
-        //Effacer le item
         case DELETE_ITEM:
 
         const filteredCart = state.cart.filter(item => item._id !== action.payload);
@@ -164,7 +326,6 @@ const Todos = (state = initialState, action) => {
                 cart:filteredCart
             }
 
-        //Augmenter le nombre d'articles
         case INCREASE_ITEM:
             let incResults = state.cart.map(item => {
                 if (item._id === action.payload) {
@@ -178,7 +339,6 @@ const Todos = (state = initialState, action) => {
                 cart:incResults
             }
 
-        //Diminuer le nombre d'articles
         case DECREASE_ITEM:
             let decResults = state.cart.map(item => {
                 if (item._id === action.payload) {
@@ -186,37 +346,32 @@ const Todos = (state = initialState, action) => {
                 }
                 return item
             })
-
             return {
                 ...state,
                 cart:decResults
             }
 
-        // Total du panier
         case TOTAL_ITEMS:
 
         const totals = state.cart.reduce((prev, item) => {
-            return prev + (item.price * item.count)
+            return prev + (item.prix * item.count)
         }, 0)
-            
+            const totalsFixed = totals.toFixed(2);
           return {
               ...state,
-              total:totals
+              total:totalsFixed
           }
 
-        // Details Page
         case DETAILS:
             return {
                 ...state,
             }
 
 
-        // eslint-disable-next-line no-fallthrough
         default:
              return state
     }
 
 
 }
-
 export default Todos;

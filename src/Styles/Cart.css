@@ -1,3 +1,41 @@
+.containerButtonCart-jz-ts {
+    width: 100%;
+    height: 20vh;
+    margin-top: 20px;
+    border: 1px solid #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.containerButtonContinuerDeShopper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: .5px solid #000000;
+}
+.containerButtonContinuerDeShopper button {
+    font-size: clamp(10px, 4.5vw, 35px);
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+}
+.containerButtonCommander {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: .5px solid #000000;
+}
+.containerButtonCommander button {
+    font-size: clamp(10px, 5vw, 35px);
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+}
+
+
+
 .cart h3 {
     text-align: center;
     margin-top: 30px;
@@ -6,78 +44,126 @@
     font-style: italic;
 }
 
-.cart-center {
-    display: block;
+.cart {
+    height: 100%;
+    width: 100%;
 }
 
+.cart-center {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: center;
+}
 .cart-info {
     text-align: center;
-}
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
 
+}
+.resecage {
+    width: 100%;
+    padding: 5px 50px 0 50px;
+}
 .single-cart {
     display: flex;
     justify-content: space-between;
-    border: 1px solid lightgray;
-    margin: 10px 5px;
-    margin-top: 0;
+    border: 1px solid #000000;
     align-items: center;
-    padding: 5px 5px;
-    background-color: rgb(236,236,236);
+    height: 20vh;
 }
-
 .sameItem {
-    flex: 0 0 30%;
-    color: rgb(61,61,61);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
     letter-spacing: 0.1rem;
-    font-style: italic;
-    text-decoration: underline;
 }
+.fontChange-yzx {
+    color: #000000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fontChange-yzx p {
+    font-size: 20px;
 
-.counting button {
-    width: 25px;
-}
-.counting span {
-    font-size: 18px;
-    padding: 0 5px;
-}
-/* .price {
-    color: crimson;
-} */
 
-.single-cart .cart-img {
-    width: 80px;
-    border: 1px solid lightgray;
-    background-color: #ccc;
+}
+.single-cart {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:
+        1fr 2.7fr .7fr 1fr 1fr .8fr 1fr 1fr
+    ;
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+}
+ .cart-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.single-cart img {
+    width: 90%;
+    height: 90%;
     border-radius: 10px;
 }
-
-.single-cart img {
+.counting {
     width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counting button {
+    width: 25px;
+    border: none;
+}
+.price {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .delete-item .fa-trash {
     color: black;
     cursor: pointer;
+    width: 30px;
 }
+
+
 
 .cart-results {
-    border: 1px solid grey;
-    padding: 10px;
-    margin-top: 30px;
+    border: 1px solid #000000;
+    width: 280px;
+    height: 180px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 58rem;
 }
-
 .cart-results h3 {
     text-align: center;
-    text-decoration: underline;
     margin-bottom: 20px;
     color: rgb(48, 47, 47);
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
 }
-
 .cart-results h4 {
-    margin: 5px;
     color: rgb(51, 51, 51);
     letter-spacing: 0.1rem;
     font-style: italic;
@@ -85,35 +171,201 @@
     font-weight: 400;
     width: 100%;
 }
-
 .cart-results h4 span {
-    /* color: rgb(247,191,8); */
     color: rgb(0, 0, 0);
     font-size: 20px;
-    font-weight: 600;
 }
 
-@media screen and (min-width: 664px) {
-    .cart-center {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+.sectionMethodeDePaiement {
+    margin-top: 15px;
+    height: 30vh;
+    margin-right: 10%;
+    padding: 0;
+    width: 100%;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    padding: 20px 0px 0px 20px;
+}
+.sectionMethodeDePaiement span {
+    font-size: 20px;
+}
 
-    .cart-info {
-        flex: 1;
+.sectionRetour {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0px 0px 50px;
+}
+.sectionRetour button {
+    background-color: #f4d0d0;
+    border-radius: 20px;
+    padding: 5px 30px;
+    width: 140px;
+    height: 40px;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
+    -webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
+    -moz-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
+}
+
+.single-cart-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .cart-center {
+        display: block;
     }
+    
     .cart-results {
-        flex: 0 0 calc(270px);
+        width: 300px;
+        margin-left: 65%;
         align-self: flex-start;
-        margin-top: 0;
     }
     .cart-results h3 {
         margin-top: 10px;
         text-transform: capitalize;
     }
+}
+
+@media screen and (max-width:850px) {
+    
+    .cart {
+        height: 100%;
+    }
+
+    .containerButtonCart-jz-ts {
+        width: 100%;
+        height: 14vh;
+        margin-top: 20px;
+        border: 1px solid #333;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .cart-info {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
     .single-cart {
-        margin-right: 30px;
+        display: none;
+    }
+    .cart-center {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 180vh;
+    }
+
+    .single-cart-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border: 1px solid #000000;
+    }
+
+
+    .gridCartMobileImg {
+        height: 100%;
+        width: 100%;
+    }
+    .gridCartMobileImg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .resecage {
+        width: 100%;
+        padding: 0px 50px 0 50px;
+    }
+
+
+    .gridCartMobileInfos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr .2fr .2fr .1fr .9fr;
+    }
+    .cart-title-mobile h4 {
+        font-size: 15px;
+    }
+    .fontChange-yzx-mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 3px;
+    }
+    .fontChange-yzx-mobile p {
+        font-size: 15px;
+    }
+    .counting-mobile {
+        display: flex;
+    }
+    .counting-mobile button {
+        font-weight: bold;
+        width: 20px;
+        background-color: #ffffff;
+        border: none;
+    }
+    .price-mobile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; 
+    }
+    .delete-item-mobile {
+        text-align: end;
+        padding-right: 5px;
+        margin-bottom: 5px;
+    }
+    .delete-item-mobile span {
+        font-size: 13px;
+    }
+    .cart-results {
+        width: 280px;
+        height: 150px;
+        margin-left: 3rem;
+        margin-top: 3rem;
+        border: 1px solid #333;
+    }
+    .counting button {
+        width: 25px;
+        border: none;
+    }
+
+
+    .sectionMethodeDePaiement {
+        margin-top: 15px;
+        height: 20vh;
+        margin-right: 10%;
+        padding: 0;
+        width: 100%;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        display: flex;
+        padding: 20px 0px 0px 20px;
+    }
+    .sectionMethodeDePaiement span {
+        font-size: 15px;
+    }
+    
+    .sectionRetour {
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 30px 0px 0px 30px;
+    }
+    .sectionRetour button {
+        background-color: #f4d0d0;
+        border-radius: 20px;
+        padding: 5px 30px;
+        width: 120px;
+        height: 30px;
+        box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
+        -webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
+        -moz-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3)  ; 
     }
 }

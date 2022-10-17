@@ -1,0 +1,177 @@
+
+
+    .containerHome {
+        width: 100%;
+        height: 150vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7fr 4fr;
+    }
+
+    .containerHomeImg {
+        overflow: hidden;
+        background-color: grey;
+        display: flex;
+        transition: 5s ease;
+    }
+    .containerHomeImg video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 5;
+    }
+    #divOnAnimations {
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #divOnAnimations h1 {
+        color: white;
+        font-size: 60px;
+        overflow: hidden;
+    }
+    #divOnAnimations .h1One .spanOne {
+        font-weight: 200;
+        display: block;
+        animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s backwards;
+      }
+    #divOnAnimations .h1Two .spanTwo {
+        font-weight: 200;
+        display: block;
+        animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.5s backwards;
+      }
+    #divOnAnimations .h1Three .spanThree {
+        font-weight: 200;
+        display: block;
+        animation: reveal 2.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s backwards;
+      }
+
+    @media screen and (max-width: 800px) {
+        #divOnAnimations h1 {
+            font-size: 45px;
+        } 
+        #divOnAnimations .h1Two .spanTwo {
+            margin-bottom: 0px;
+        }
+        #divOnAnimations .h1Three {
+            margin-bottom: 160px;
+        }
+    }
+
+    @keyframes reveal {
+        0% {
+          transform: translate(0,100%);
+        }
+        100% {
+          transform: translate(0,0);
+        }
+      }
+   
+
+    .containerHomeText {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+        justify-items: center;
+    }
+    .divPHome {
+        background-color: #f4d0d0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 100px 10px 100px;
+    }
+.containerHomeButton {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    position: absolute;
+    margin-top: 20%;
+}
+.secondButtonGridHome button {
+    background-color: #f4d0d0;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 5px 14px rgba(0, 0, 0, 0.3) inset ; 
+    -webkit-box-shadow: inset 0px 4px 5px 1px rgba(0, 0, 0, 0.3)  ; 
+    -moz-box-shadow: inset 0 8px 14px rgba(0, 0, 0, 0.3)  ;
+}
+
+@media screen and (max-width: 1030px) {
+    .containerHomeButton {
+        margin-top: 25%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .containerHomeButton {
+        margin-top: 28%;
+    }
+    .img1 {
+        display: none;
+    }
+}
+@media screen and (max-width: 850px) {
+    .containerHomeButton {
+        margin-top: 31%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+.containerHome {
+    width: 100%;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 4fr;
+}
+
+
+.containerHomeImg {
+    overflow: hidden;
+}
+.containerHomeImg img {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+
+.containerHomeText {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+}
+.divPHome {
+    background-color: #f4d0d0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.containerHomeButton {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    position: absolute;
+    margin-top: 71%;
+}
+.secondButtonGridHome button {
+    background-color: #f4d0d0;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+}

@@ -1,0 +1,142 @@
+.searchbox {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 40px;
+    transition: 0.4s linear;
+    margin-right: 5%;
+    overflow: hidden;
+  }
+ .searchbox .searchboxInput {
+    display: block;
+    appearance: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 5px;
+    color: #24233A;
+    background-color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s linear;
+  }
+ .searchbox .searchboxInput::placeholder {
+    color: #24233A;
+  }
+ .searchbox .searchbox__icon {
+    position: absolute;
+    right: calc(53px / 2);
+    top: 50%;
+    transform: translate(80%, -50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+.searchbox .searchbox__icon path {
+    fill: #ffffff;
+    transition: 0.4s linear;
+  }
+ .searchbox:focus-within {
+    max-width: 300px;
+  }
+.searchbox:focus-within .searchboxInput {
+    background-color: #FFF;
+    padding-right: 50px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+.searchbox:focus-within .searchbox__icon path {
+    fill: #24233A;
+  }
+
+  
+  .searchboxIcon {
+    width: 10px;
+    height: 10px;
+  } 
+  
+  .dropdown {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+  }
+  
+  .dropdown:empty {
+    border: none;
+  }
+  
+  .dropdownRow {
+    height: 10%;
+    cursor: pointer;
+    text-align: start;
+    margin: 2px 0;
+  }
+  
+  input {
+    width: 220px;
+  }
+  
+  .searchInner {
+    display: flex;
+  }
+
+
+
+  @media screen and (max-width:800px) {
+    .searchbox {
+      position: rel;
+      display: block;
+      width: 100%;
+      max-width: 40px;
+      transition: 0.4s linear;
+      margin-right: 3%;
+      overflow: hidden;
+    }
+    .searchbox .searchbox__input {
+      display: block;
+      appearance: none;
+      width: 100%;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      background-color: #000000;
+      padding: 5px;
+      color: #24233A;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.4s linear;
+    }
+    .searchbox .searchbox__icon {
+      position: absolute;
+      right: calc(53px / 2);
+      top: 50%;
+      transform: translate(80%, -50%);
+      width: 20px;
+      height: 20px;
+      pointer-events: none;
+    }
+
+    .dropdown {
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+    }
+    
+    
+    .dropdown:empty {
+      border: none;
+    }
+    .dropdownRow {
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    input {
+      width: 220px;
+    }
+    
+    .searchInner {
+      display: flex;
+    }
+  }
