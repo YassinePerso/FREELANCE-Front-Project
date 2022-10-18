@@ -1,3 +1,11 @@
+Hello !
+
+Here is the anonymized version of the project that I've done for a Freelancer who wanted to create his own E-shop to be able to sell his good quality products.
+
+- It was made with React and Redux.
+- Had a loy of fun on this project.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
