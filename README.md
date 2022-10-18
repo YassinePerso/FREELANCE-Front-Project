@@ -6,6 +6,9 @@ Here is the anonymized version of the project that I've done for a Freelancer wh
 - Had a loy of fun on this project.
 
 
+####################################################################################################################################################################
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
