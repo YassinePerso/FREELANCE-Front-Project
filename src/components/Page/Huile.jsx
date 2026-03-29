@@ -9,25 +9,25 @@ const Huile = (props) => {
     const huilePage = [
         {
             _id: 1,
-            title: "Huile Calmante",
+            title: "Lorem Lorem",
             img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
             url: "HuileCalmante"
         },
         {
             _id: 2,
-            title: "Huile Relaxante",
+            title: "Lorem Lorem",
             img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
             url: "HuileRelaxante"
         },
         {
             _id: 3,
-            title: "Huile Anti-Stress",
+            title: "Lorem Lorem-Stress",
             img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
             url: "HuileAntiStress"
         },
         {
             _id: 4,
-            title: "Huile Anti-douleur",
+            title: "Lorem Lorem",
             img: "https://assets.codepen.io/1159990/tokyo-tower.jpg",
             url: "HuileAntiDouleur"
         }

@@ -49,7 +49,7 @@ const Home = () => {
             <div className={styles.secondButtonGridHome}>
               <Zoom delay={200} duration={2000}>
                 <Link to="/Decouverte">
-                  <button>Découvrez Chanvrax</button>
+                  <button>Découvrez Lorem Ipsum</button>
                 </Link>
               </Zoom>
             </div>

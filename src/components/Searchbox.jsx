@@ -10,67 +10,67 @@ const Searchbox = () => {
   const dataSearhcBar = [
     {
       _id: 1,
-      title: "Huile Calmante 1"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 2,
-      title: "Huile Calmante 2"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 3,
-      title: "Huile Calmante 3"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 4, 
-      title: "Huile Relaxante 1"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 5, 
-      title: "Huile Relaxante 2"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 6, 
-      title: "Huile Relaxante 3"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 7, 
-      title: "Huile Anti-Stress"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 8, 
-      title: "Huile Anti-douleur 1"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 9, 
-      title: "Huile Anti-douleur 2"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 10, 
-      title: "Huile Anti-douleur 3"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 11, 
-      title: "Infusion CBD Vitalité"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 12, 
-      title: "Infusion CBD Digestion "
+      title: "xxxxxxxxxx"
   },
   {
       _id: 13, 
-      title: "Thé Anti-Stress"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 14, 
-      title: "Gummies CBD 1"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 15, 
-      title: "Gummies CBD 2"
+      title: "xxxxxxxxxx"
   },
   {
       _id: 16, 
-      title: "Bonbons colorés"
+      title: "xxxxxxxxxx"
   },
   ]
 
