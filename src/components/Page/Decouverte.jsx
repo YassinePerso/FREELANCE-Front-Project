@@ -6,7 +6,7 @@ const Decouverte = () => {
 
     return (
         <section className={styles.containerDecouverte}>
-            <span>Page Découverte --- Rien pour le moment</span>
+            <span>Page Découverte</span>
         </section>
     );
 };
